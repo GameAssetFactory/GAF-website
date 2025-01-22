@@ -29,21 +29,21 @@
 
   /*======= Couleurs =======*/
   /* Changer la couleur préférée */
-  --hue-color: 270 ;
+  --hue-color: 35;
 
   /*========= Mode de couleur HSL =========*/
-  --first-color: hsl(270, 60%, 40%); /* Couleur principale en violet */
-  --first-color-second: hsl(280, 70%, 75%); /* Plus clair pour un meilleur contraste */
-  --first-color-alt: hsl(260, 50%, 60%); /* Ajustement pour une teinte mauve douce */
-  --first-color-lighter: hsl(250, 40%, 50%); /* Légèrement plus clair */
-  --title-color: hsl(270, 80%, 55%); /* Ajustement pour un meilleur contraste */
-  --text-color: hsl(275, 30%, 20%); /* Plus sombre pour le texte */
-  --text-color-light: hsl(270, 50%, 45%); /* Plus clair pour le texte léger */
-  --input-color: hsl(270, 80%, 90%); /* Plus clair pour les champs de saisie */
-  --body-color: hsl(270, 100%, 95%); /* Couleur de fond plus claire */
+  --first-color: hsl(35, 100%, 45%); /* Jaune-orange foncé */
+  --first-color-second: hsl(35, 100%, 70%); /* Jaune-orange moyen */
+  --first-color-alt: hsl(35, 100%, 55%); /* Jaune-orange foncé */
+  --first-color-lighter: hsl(35, 100%, 65%); /* Jaune-orange moyen */
+  --title-color: hsl(35, 100%, 35%); /* Orange très foncé */
+  --text-color: hsl(35, 50%, 25%); /* Orange très sombre pour le texte */
+  --text-color-light: hsl(35, 100%, 55%); /* Jaune-orange foncé pour le texte léger */
+  --input-color: hsl(35, 100%, 85%); /* Jaune-orange très clair pour les champs de saisie */
+  --body-color: hsl(35, 100%, 90%); /* Jaune-orange très clair pour le fond */
   --container-color: #fff;
-  --scroll-bar-color: hsl(270, 100%, 90%); /* Plus clair pour la barre de défilement */
-  --scroll-thumb-color: hsl(270, 100%, 70%); /* Ajustement pour le pouce de la barre de défilement */
+  --scroll-bar-color: hsl(35, 100%, 85%); /* Jaune-orange très clair pour la barre de défilement */
+  --scroll-thumb-color: hsl(35, 100%, 65%); /* Jaune-orange moyen pour le pouce de la barre de défilement */
 
   /*========= Police et typographie ===========*/
 
