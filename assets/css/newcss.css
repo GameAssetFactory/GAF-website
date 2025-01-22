@@ -7,19 +7,19 @@
 
  @font-face {
   font-family: 'Mi Sans';
-  src: url('./font/MiSans.ttf') format('truetype');
+  src: url('/assets/font/MiSans.ttf') format('truetype');
   font-weight: normal; /* ou bold selon la police */
   font-style: normal; /* ou italic selon la police */
 }
 
 /* 
- * This portfolio uses inecraft enchantment.
+ * This portfolio uses Minecraft enchantment.
  * Minecraft enchantment Fonts are used under the Minecraft enchantment Fonts Intellectual Property License Agreement from Mojang Inc.
  */
 
 @font-face {
   font-family: 'minecraft enchantment';
-  src: url('./font/minecraft-enchantment.ttf') format('truetype'); /* Chemin vers le fichier de police gras */
+  src: url('/assets/font/minecraft-enchantment.ttf') format('truetype'); /* Chemin vers le fichier de police gras */
   font-weight: bold; /* Poids gras */
   font-style: normal; /* Style normal */
 }
