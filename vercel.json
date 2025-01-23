@@ -8,7 +8,12 @@
       "permanent": true
     },
     {
-      "source": "/:path*#:hash",
+      "source": "/:path*/#:hash*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*#:hash*",
       "destination": "/:path*",
       "permanent": true
     }
