@@ -14,12 +14,6 @@
 
 
 
-
-/* 
- * This portfolio uses Minecraft enchantment.
- * Minecraft enchantment Fonts are used under the Minecraft enchantment Fonts Intellectual Property License Agreement from Mojang Inc.
- */
-
 @font-face {
   font-family: 'minecraft enchantment';
   src: url('/assets/font/minecraft-enchantment.ttf') format('truetype'); /* Chemin vers le fichier de police gras */
@@ -42,7 +36,7 @@
   --title-color: hsl(35, 100%, 35%); /* Orange très foncé */
   --text-color: hsl(35, 50%, 25%); /* Orange très sombre pour le texte */
   --text-color-light: hsl(35, 100%, 55%); /* Jaune-orange foncé pour le texte léger */
-  --input-color: hsl(35, 100%, 85%); /* Jaune-orange très clair pour les champs de saisie */
+  --input-color: hsl(35, 69%, 40%); /* Jaune-orange très clair pour les champs de saisie */
   --body-color: hsl(35, 100%, 90%); /* Jaune-orange très clair pour le fond */
   --container-color: #fff;
   --scroll-bar-color: hsl(35, 100%, 85%); /* Jaune-orange très clair pour la barre de défilement */
@@ -117,12 +111,7 @@ body.dark-theme {
 }
 
 /*================= Bouton Sombre/Lumineux ===============*/
-.footer__img {
-  left: 100px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
+
 
 .nav__btns {
   display: flex;
@@ -155,7 +144,9 @@ body.dark-theme {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: all 0.3s; /* Applique une transition de 0.3 secondes à tous les éléments */
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -326,18 +317,18 @@ img {
 
   .nav__toggle {
     font-size: 1rem; /* Réduction de la taille de la police */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
   }
 
   .nav__link {
     font-size: 0.85rem; /* Réduction de la taille de la police */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
     margin: 5px 0; /* Ajout d'une marge pour espacer les liens */
   }
 
   .nav__icon {
     font-size: 1.1rem; /* Réduction de la taille de l'icône */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
   }
 }
 
@@ -354,18 +345,18 @@ img {
 
   .nav__toggle {
     font-size: 0.85rem; /* Réduction de la taille de la police */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
   }
 
   .nav__link {
     font-size: 0.8rem; /* Réduction de la taille de la police */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
     margin: 5px 0; /* Ajout d'une marge pour espacer les liens */
   }
 
   .nav__icon {
     font-size: 1rem; /* Réduction de la taille de l'icône */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
   }
 }
 
@@ -381,18 +372,18 @@ img {
 
 
   .nav__toggle {
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
   }
 
   .nav__link {
     font-size: 0.75rem; /* Réduction de la taille de la police */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+      transition: 0.3s;
     margin: 5px 0; /* Ajout d'une marge pour espacer les liens */
   }
 
   .nav__icon {
     font-size: 0.9rem; /* Réduction de la taille de l'icône */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
   }
 }
 
@@ -408,18 +399,18 @@ img {
   }
 
   .nav__toggle {
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+      transition: 0.3s;
   }
 
   .nav__link {
     font-size: 10px; /* Réduction de la taille de la police */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
     margin: 5px 0; /* Ajout d'une marge pour espacer les liens */
   }
 
   .nav__icon {
     font-size: 0.9rem; /* Réduction de la taille de l'icône */
-    transition: font-size 0.3s ease; /* Ajout de la transition */
+    transition: 0.3s;
   }
 }
 
@@ -481,6 +472,7 @@ img {
 }
 .home__description {
   margin-bottom: var(--mb-2);
+  transition: 0.3s;
 }
 
 .portfolio__scroll {
@@ -932,7 +924,7 @@ iframe.gdrive {
 
 .swiper-button-prev,
 .swiper-button-next {
-  transition: transform 0.3s ease; /* Ajout de la transition */
+  transition: 0.3s;
 }
 
 .swiper-button-prev:hover {
@@ -989,61 +981,6 @@ iframe.gdrive {
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
-
-/*=================== Footer ==================*/
-
-.footer {
-    padding-top: 0.5rem; /* Réduit le padding supérieur */
-    padding-bottom: -100px; /* Réduit le padding inférieur */
-    text-align: center; /* Centre le texte dans le footer */
-}
-
-.footer__container {
-    display: flex; /* Utilise flexbox pour un alignement plus compact */
-    flex-direction: column; /* Changez en colonne pour un affichage compact */
-    row-gap: 1rem; /* Réduit l'espacement entre les éléments */
-}
-
-.footer__link:hover {
-  color: var(--first-color-lighter);
-  transition: 0.3s;
-}
-
-.footer__title {
-    font-size: var(--h1-font-size); /* Ajuste la taille de la police */
-    margin-bottom: var(--mb-0-25); /* Réduit la marge inférieure */
-}
-
-.footer__subtitle {
-    font-size: var(--small-font-size);
-}
-
-.footer__links {
-    display: flex; /* Utilise flexbox pour centrer les liens */
-    justify-content: center; /* Centre les liens horizontalement */
-    flex-direction: column; /* Changez en colonne pour un affichage compact */
-    row-gap: 0.5rem; /* Réduit l'espacement entre les liens */
-}
-
-.footer__link {
-    color: #fff; /* Assurez-vous que le texte est bien visible */
-    text-align: center; /* Centre le texte des liens */
-}
-
-
-.footer__copy {
-    font-size: var(--smaller-font-size);
-    text-align: center;
-    color: var(--text-color-light);
-    margin-top: 0.5rem; /* Ajuste la marge supérieure */
-}
-
-.footer__bg {
-  background-color: var(--first-color-second);
-
-  text-align: center; /* Centre le texte à l'intérieur */
-}
-
 
 
 
@@ -1206,8 +1143,7 @@ iframe.gdrive {
   .about__container,
   .skills__container,
   .project__container,
-  .contact__container,
-  .footer__container {
+  .contact__container{
     grid-template-columns: repeat(2, 1fr);
     transition: 0.3s /* Ajout de la transition */
   }
@@ -1260,8 +1196,7 @@ iframe.gdrive {
   }
 
   .header,
-  .main,
-  .footer__container {
+  .main {
     padding: 0 1rem;
     transition: 0.3s /* Ajout de la transition */
   }
@@ -1400,15 +1335,7 @@ iframe.gdrive {
     transition: 0.3s /* Ajout de la transition */
   }
 
-  .footer__container {
-    grid-template-columns: repeat(3, 1fr);
-    transition: 0.3s /* Ajout de la transition */
-  }
 
-  .footer__bg {
-    padding: 3rem 0 3.5rem;
-    transition: 0.3s /* Ajout de la transition */
-  }
 
 
 }
@@ -1418,8 +1345,7 @@ iframe.gdrive {
 @media screen and (min-width: 968px) {
   
   .header,
-  .main,
-  .footer__container {
+  .main {
     padding: 0;
     transition: 0.3s /* Ajout de la transition */
   }
@@ -1474,10 +1400,6 @@ iframe.gdrive {
     border-radius: 10px;
   }
 
-  .footer__link{
-    margin-bottom: 50px;
-  }
-  
   .nav__toggle {
     font-size: 17px; /* Augmentez la taille de la police ici */
     transition: 0.3s;
@@ -1519,4 +1441,96 @@ iframe.gdrive {
 
 .nav__btns, .nav__close, .nav__icon, .nav__list, .nav__link, .nav__menu, .nav__toggle, .change-theme, .home__social, .home__social-icon {
   transition: 0.3s
+}
+
+
+
+/*=================== Footer ==================*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--first-color-second);
+  padding-top: 0.5rem;
+  transition: 0.3s;
+}
+
+.footer__bg {
+  padding: 1rem 0;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+.footer__description {
+  color: #fff;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  max-width: 968px;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+.footer__title {
+  font-size: var(--h3-font-size);
+
+
+  transition: 0.3s;
+}
+
+.footer__subtitle {
+  font-size: var(--smaller-font-size);
+  transition: 0.3s;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  
+}
+
+.footer__social-link {
+  font-size: 3rem;
+  color: var(--first-color-lighter);
+  transition: 0.3s;
+  margin-right: 0.5rem;
+}
+
+
+.footer__social-link:hover {
+  color: var(--first-color-alt);
+
+  transition: 0.3s;
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  text-align: center;
+  opacity: 0.7;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+
+
+.footer__icon {
+  width: 26px; /* Ajustez la taille selon vos besoins */
+  height: 26px; /* Ajustez la taille selon vos besoins */
+}
+
+
+/* Ajustement pour les appareils mobiles */
+@media screen and (max-width: 767px) {
+  .footer {
+      padding-bottom: 80px; /* Pour éviter le chevauchement avec la navbar mobile */
+      transition: 0.3s;
+  }
 }

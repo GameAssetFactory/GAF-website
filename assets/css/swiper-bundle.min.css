@@ -214,7 +214,7 @@
 .swiper-pagination {
   position: absolute;
   text-align: center;
-  transition: 0.3s opacity;
+  transition: 0.3s;
   transform: translate3d(0, 0, 0);
   z-index: 10;
 }
@@ -463,7 +463,7 @@ button.swiper-pagination-bullet {
   z-index: -1000;
 }
 .swiper-container-fade.swiper-container-free-mode .swiper-slide {
-  transition-timing-function: ease-out;
+  transition-timing-function:ease-out;
 }
 .swiper-container-fade .swiper-slide {
   pointer-events: none;
