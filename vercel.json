@@ -6,11 +6,6 @@
       "source": "/:path*.html",
       "destination": "/:path*",
       "permanent": true
-    },
-    {
-      "source": "/:path*#:hash*",
-      "destination": "/:path*",
-      "permanent": true
     }
   ]
 }

@@ -12,6 +12,17 @@
   font-style: normal; /* ou italic selon la police */
 }
 
+
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
+  content: none !important;
+}
+
 /* 
  * This portfolio uses Minecraft enchantment.
  * Minecraft enchantment Fonts are used under the Minecraft enchantment Fonts Intellectual Property License Agreement from Mojang Inc.
