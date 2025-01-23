@@ -18,7 +18,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: rgb(255, 140, 0); /* Orange plus foncé */
+  --swiper-theme-color: rgb(196, 124, 38); /* Orange plus foncé */
 }
 .swiper-container {
   margin-left: auto;

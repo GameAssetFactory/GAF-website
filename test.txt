@@ -1,0 +1,11 @@
+        <div class=nav__icon></div>
+          <!-- Bouton de changement de thème -->
+          <img src="assets/img/profile.png" alt="Description de l'image" class="nav__img" />
+        </div>
+        </div>
+
+               <div class="nav__btns">
+          <!-- Bouton de changement de thème -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          </div>
+        </div>
