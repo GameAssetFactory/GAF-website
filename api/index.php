@@ -38,36 +38,36 @@
         </div>
         </div>
 
-        <form class="nav__menu" id="nav-menu" method="post" action="">
+        <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
             <li class="nav__item">
-            <button type="submit" name="page" value="home" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'home') ? 'active' : ''; ?>">
-                <i class="uil uil-estate nav__icon"></i>Home
-            </button>
+                <a href="?page=home" class="nav__link <?php echo (!isset($_GET['page']) || $_GET['page'] == 'home') ? 'active' : ''; ?>">
+                    <i class="uil uil-estate nav__icon"></i>Home
+                </a>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="products" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'products') ? 'active' : ''; ?>">
-                <i class="uil uil-box nav__icon"></i>Products
-            </button>
+                <a href="?page=products" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'products') ? 'active' : ''; ?>">
+                    <i class="uil uil-box nav__icon"></i>Products
+                </a>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="portfolio" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'portfolio') ? 'active' : ''; ?>">
-                <i class="uil uil-briefcase nav__icon"></i>Portfolio
-            </button>
+                <a href="?page=portfolio" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'portfolio') ? 'active' : ''; ?>">
+                    <i class="uil uil-briefcase nav__icon"></i>Portfolio
+                </a>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="jobs" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'jobs') ? 'active' : ''; ?>">
-                <i class="uil uil-briefcase-alt nav__icon"></i>Jobs
-            </button>
+                <a href="?page=jobs" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'jobs') ? 'active' : ''; ?>">
+                    <i class="uil uil-briefcase-alt nav__icon"></i>Jobs
+                </a>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="contact" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'contact') ? 'active' : ''; ?>">
-                <i class="uil uil-envelope nav__icon"></i>Contact
-            </button>
+                <a href="?page=contact" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">
+                    <i class="uil uil-envelope nav__icon"></i>Contact
+                </a>
             </li>
         </ul>
         <i class="uil uil-times nav__close" id="nav-close"></i>
-        </form>
+        </div>
 
         <div class="nav__btns">
         <i class="uil uil-moon change-theme" id="theme-button"></i>
@@ -85,32 +85,26 @@
         <img src="../img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
     </div>
         <?php
-            // Définir la page courante basée sur le paramètre 'page' passé par URL réécrite
+            // Modifier la logique pour utiliser $_GET au lieu de $_POST
             $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
-            if($current_page) {
-                switch($current_page) {
-                    case 'products':
-                        include __DIR__ . '/products.php';
-                        break;
-                    case 'portfolio':
-                        include __DIR__ . '/portfolio.php'; 
-                        break;
-                    case 'jobs':
-                        include __DIR__ . '/jobs.php';
-                        break;
-                    case 'contact':
-                        include __DIR__ . '/contact.php';
-                        break;
-                    default:
-                        include __DIR__ . '/home.php';
-                        break; 
-                }
-            } else {
-                include __DIR__ . '/home.php';
+            switch($current_page) {
+                case 'products':
+                    include __DIR__ . '/products.php';
+                    break;
+                case 'portfolio':
+                    include __DIR__ . '/portfolio.php'; 
+                    break;
+                case 'jobs':
+                    include __DIR__ . '/jobs.php';
+                    break;
+                case 'contact':
+                    include __DIR__ . '/contact.php';
+                    break;
+                default:
+                    include __DIR__ . '/home.php';
+                    break; 
             }
-
-                
         ?>
 
 
@@ -169,5 +163,13 @@
       </div>
     </div>
   </footer>
+
+<!-- Ajouter ce script avant la fermeture de body -->
+<script>
+    // Supprimer le hashtag de l'URL si présent
+    if (window.location.hash) {
+        history.replaceState(null, null, window.location.pathname + window.location.search);
+    }
+</script>
 </html>
 
