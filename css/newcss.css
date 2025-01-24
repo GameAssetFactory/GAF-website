@@ -1458,12 +1458,12 @@ iframe.gdrive {
   left: 0;
   width: 100%;
   background-color: var(--first-color-second);
-  padding-top: 0.5rem;
+  padding-top: 0.25rem; /* Réduit de 0.5rem à 0.25rem */
   transition: 0.3s;
 }
 
 .footer__bg {
-  padding: 1rem 0;
+  padding: 0.5rem 0; /* Réduit de 1rem à 0.5rem */
   text-align: center;
   transition: 0.3s;
 }
@@ -1476,16 +1476,14 @@ iframe.gdrive {
 .footer__container {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 0.25rem; /* Réduit de 0.5rem à 0.25rem */
   max-width: 968px;
   margin: 0 auto;
   transition: 0.3s;
 }
 
 .footer__title {
-  font-size: var(--h3-font-size);
-
-
+  font-size: 1rem; /* Réduit la taille du titre */
   transition: 0.3s;
 }
 
@@ -1516,12 +1514,12 @@ iframe.gdrive {
 }
 
 .footer__copy {
-  font-size: 0.75rem;
+  font-size: 0.7rem; /* Légèrement réduit de 0.75rem à 0.7rem */
   text-align: center;
   opacity: 0.7;
-  padding-top: 1rem;
+  padding-top: 0.5rem; /* Réduit de 1rem à 0.5rem */
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 1rem;
+  margin-top: 0.5rem; /* Réduit de 1rem à 0.5rem */
   transition: 0.3s;
 }
 
@@ -1536,7 +1534,7 @@ iframe.gdrive {
 /* Ajustement pour les appareils mobiles */
 @media screen and (max-width: 767px) {
   .footer {
-      padding-bottom: 80px; /* Pour éviter le chevauchement avec la navbar mobile */
+      padding-bottom: 70px; /* Réduit de 80px à 70px */
       transition: 0.3s;
   }
 }
