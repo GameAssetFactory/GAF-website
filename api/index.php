@@ -1,6 +1,3 @@
-<?php
-phpinfo();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -173,3 +170,6 @@ phpinfo();
     </div>
   </footer>
 </html>
+
+<?php
+phpinfo();

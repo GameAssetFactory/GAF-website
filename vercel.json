@@ -3,9 +3,5 @@
     "api/*.php": {
       "runtime": "vercel-php@0.7.3"
     }
-  },
-
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ]
+  }
 }
