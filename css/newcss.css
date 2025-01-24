@@ -1441,6 +1441,19 @@ iframe.gdrive {
     box-shadow: 0 -2px 5px var(--body-color); /* Ombre pour un effet de profondeur */
     transition: 0.3s;
   }
+
+  /* Ajustement pour les appareils mobiles */
+  .footer {
+      margin-bottom: 0; /* Enlève la marge en bas */
+      padding-bottom: 70px; /* Ajoute un padding pour éviter que le contenu soit caché par la navbar */
+      transition: 0.3s;
+  }
+
+  /* Ajuster le contenu principal pour qu'il ne chevauche pas le footer */
+  main {
+      margin-bottom: 0;
+      padding-bottom: 1rem;
+  }
 }
 
 /* Show Menu */
@@ -1535,8 +1548,15 @@ iframe.gdrive {
 /* Ajustement pour les appareils mobiles */
 @media screen and (max-width: 767px) {
   .footer {
-      margin-bottom: 70px;
+      margin-bottom: 0; /* Enlève la marge en bas */
+      padding-bottom: 70px; /* Ajoute un padding pour éviter que le contenu soit caché par la navbar */
       transition: 0.3s;
+  }
+
+  /* Ajuster le contenu principal pour qu'il ne chevauche pas le footer */
+  main {
+      margin-bottom: 0;
+      padding-bottom: 1rem;
   }
 }
 
