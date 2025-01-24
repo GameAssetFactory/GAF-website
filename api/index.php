@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://gameassetfactory.com/">
     <meta property="og:image" content="../img/GameAssetFactoryLogo1024.png"> <!-- png -->
     <link rel="icon" href="../img/GameAssetFactoryLogopetit.ico"> <!-- ico -->
-    <title>GameAssetFactory</title>
+    <title><?php echo $page_title; ?></title>
     
     <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/newcss.css" />
@@ -88,20 +88,26 @@
             // Modifier la logique pour utiliser $_GET au lieu de $_POST
             $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
+            // Définir le titre en fonction de la page
             switch($current_page) {
                 case 'products':
+                    $page_title = "Products - GameAssetFactory";
                     include __DIR__ . '/products.php';
                     break;
                 case 'portfolio':
+                    $page_title = "Portfolio - GameAssetFactory";
                     include __DIR__ . '/portfolio.php'; 
                     break;
                 case 'jobs':
+                    $page_title = "Jobs - GameAssetFactory";
                     include __DIR__ . '/jobs.php';
                     break;
                 case 'contact':
+                    $page_title = "Contact - GameAssetFactory";
                     include __DIR__ . '/contact.php';
                     break;
                 default:
+                    $page_title = "GameAssetFactory - Build worlds, piece by piece";
                     include __DIR__ . '/home.php';
                     break; 
             }
