@@ -1,3 +1,13 @@
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const loader = document.getElementById('loader-wrapper');
+        loader.classList.add('loader-hidden');
+        loader.addEventListener('transitionend', () => {
+            loader.style.display = 'none';
+        });
+    }, 0);
+});
+
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle");
 navClose = document.getElementById("nav-close");

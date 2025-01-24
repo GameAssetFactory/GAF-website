@@ -1,30 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="og:site_name" content="GameAssetFactory - Home">
-    <meta property="og:title" content="&#x26CA; GameAssetFactory - Home">
+    <meta property="og:site_name" content="GameAssetFactory">
+    <meta property="og:title" content="&#x26CA; GameAssetFactory">
     <meta property="og:description" content="Build worlds, piece by piece">
     <meta property="og:url" content="https://gameassetfactory.com/">
     <meta property="og:image" content="assets/img/GameAssetFactoryLogo1024.png"> <!-- png -->
     <link rel="icon" href="assets/img/GameAssetFactoryLogopetit.ico"> <!-- ico -->
-    <title>GameAssetFactory - Home</title>
+    <title>GameAssetFactory</title>
     
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/newcss.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+
+      
     />
+
+
+    
   </head>
 
-  <body oncontextmenu="return false">
-    <header class="header" id="header">
 
-      <nav class="nav container">
+
+  <header class="header" id="header">
+    <nav class="nav container">
         <div class="nav-background"></div>
         <div class=nav__icon></div>
           <!-- Bouton de changement de thème -->
@@ -32,92 +38,90 @@
         </div>
         </div>
 
-
-
-
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            
+        <form class="nav__menu" id="nav-menu" method="post" action="">
+        <ul class="nav__list">
             <li class="nav__item">
-              <a href="home.html" class="nav__link active-link">
+            <button type="submit" name="page" value="home" class="nav__link active-link">
                 <i class="uil uil-estate nav__icon"></i>Home
-              </a>
+            </button>
             </li>
             <li class="nav__item">
-              <a href="products.html" class="nav__link">
+            <button type="submit" name="page" value="products" class="nav__link">
                 <i class="uil uil-box nav__icon"></i>Products
-              </a>
+            </button>
             </li>
             <li class="nav__item">
-              <a href="portfolio.html" class="nav__link">
+            <button type="submit" name="page" value="portfolio" class="nav__link">
                 <i class="uil uil-briefcase nav__icon"></i>Portfolio
-              </a>
+            </button>
             </li>
             <li class="nav__item">
-              <a href="jobs.html" class="nav__link">
+            <button type="submit" name="page" value="jobs" class="nav__link">
                 <i class="uil uil-briefcase-alt nav__icon"></i>Jobs
-              </a>
+            </button>
             </li>
             <li class="nav__item">
-              <a href="contact.html" class="nav__link">
+            <button type="submit" name="page" value="contact" class="nav__link">
                 <i class="uil uil-envelope nav__icon"></i>Contact
-              </a>
+            </button>
             </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
-
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+        </form>
 
         <div class="nav__btns">
-          <!-- Bouton de changement de thème -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-          </div>
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
         </div>
 
         <div class="nav__toggle" id="nav-toggle">
-          <i class="uil uil-apps"></i>
+        <i class="uil uil-apps"></i>
         </div>
-      </nav>
+    </nav>
     </header>
- 
-    <main class="main">
-      <!--========================= Accueil =====================-->
 
-      <section class="home section" id="Accueil">
-        <div class="home__container container grid">
-          <div class="home__content grid">
-            <div class="home__social">
 
-            </div>
-            <div class="home__data">
-              <h1 class="home__title">Hey, Je m'appelle Daniels Soares</h1>
-              <h3 class="home__subtitle">
-                Dev d'app / Site Web
-              </h3>
-              <p class="home__description">
-                Il y aura toutes les infos me concernant, dans ce portfolio
-                <br><br><strong>Lycée Renée Cassin </strong>, BTS SIO SLAM.
-              </p>
-              <a href="#Me-Contacter"               class="button button--flex button--small portfolio__button">
-                Contactez-moi <i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
-          </div>
+<body>
+    <div id="loader-wrapper">
+        <img src="assets/img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
+    </div>
+        <?php
+            if(isset($_POST['page']))
+            {
+                switch($_POST['page'])
+                {
+                    case 'products':
+                        include 'products.php';
+                        break;
+                    case 'portfolio':
+                        include 'portfolio.php'; 
+                        break;
+                    case 'jobs':
+                        include 'jobs.php';
+                        break;
+                    case 'contact':
+                        include 'contact.php';
+                        break;
+                    default:
+                        include 'home.php';
+                        break; 
+                }
+            } else {
+                include 'home.php';
+            }
 
-          <div class="home__scroll">
-            <a href="#À-propos" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Slide down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
-          </div>
-        </div>
+                
+        ?>
 
-        <br><br><br><br><br><br>
-      </section>  
 
-  
+    </body>
+
+
+
+
+  <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+  <script src="assets/js/ptj.js"></script>
+
 
   <!--================== Footer ===============-->
   <footer class="footer">
@@ -164,17 +168,4 @@
       </div>
     </div>
   </footer>
-
-  <!--================== SCROLL TOP ==================-->
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up scrollup__icon"></i>
-  </a>
-
-
-  <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
-  <script src="assets/js/ptj.js"></script>
-
-
-</body>
 </html>
