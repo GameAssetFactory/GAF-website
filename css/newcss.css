@@ -1444,8 +1444,8 @@ iframe.gdrive {
 
   /* Ajustement pour les appareils mobiles */
   .footer {
-      margin-bottom: 0; /* Enlève la marge en bas */
-      padding-bottom: 70px; /* Ajoute un padding pour éviter que le contenu soit caché par la navbar */
+      margin-bottom: 0;
+      padding-bottom: 90px; /* Augmenté de 70px à 90px pour descendre le footer */
       transition: 0.3s;
   }
 
@@ -1548,8 +1548,8 @@ iframe.gdrive {
 /* Ajustement pour les appareils mobiles */
 @media screen and (max-width: 767px) {
   .footer {
-      margin-bottom: 0; /* Enlève la marge en bas */
-      padding-bottom: 70px; /* Ajoute un padding pour éviter que le contenu soit caché par la navbar */
+      margin-bottom: 0;
+      padding-bottom: 90px; /* Augmenté de 70px à 90px pour descendre le footer */
       transition: 0.3s;
   }
 
