@@ -41,27 +41,27 @@
         <form class="nav__menu" id="nav-menu" method="get" action="">
         <ul class="nav__list">
             <li class="nav__item">
-            <button type="submit" name="page" value="home" class="nav__link <?php echo ($_SERVER['REQUEST_URI'] == '/home') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="home" class="nav__link <?php echo ($current_page == 'home') ? 'active' : ''; ?>">
                 <i class="uil uil-estate nav__icon"></i>Home
             </button>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="products" class="nav__link <?php echo ($_SERVER['REQUEST_URI'] == '/products') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="products" class="nav__link <?php echo ($current_page == 'products') ? 'active' : ''; ?>">
                 <i class="uil uil-box nav__icon"></i>Products
             </button>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="portfolio" class="nav__link <?php echo ($_SERVER['REQUEST_URI'] == '/portfolio') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="portfolio" class="nav__link <?php echo ($current_page == 'portfolio') ? 'active' : ''; ?>">
                 <i class="uil uil-briefcase nav__icon"></i>Portfolio
             </button>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="jobs" class="nav__link <?php echo ($_SERVER['REQUEST_URI'] == '/jobs') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="jobs" class="nav__link <?php echo ($current_page == 'jobs') ? 'active' : ''; ?>">
                 <i class="uil uil-briefcase-alt nav__icon"></i>Jobs
             </button>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="contact" class="nav__link <?php echo ($_SERVER['REQUEST_URI'] == '/contact') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="contact" class="nav__link <?php echo ($current_page == 'contact') ? 'active' : ''; ?>">
                 <i class="uil uil-envelope nav__icon"></i>Contact
             </button>
             </li>
