@@ -1432,7 +1432,7 @@ iframe.gdrive {
     bottom: 0; /* Positionne la navbar en bas */
     left: 0; /* Aligne à gauche */
     z-index: var(--z-fixed);
-    background-color: var(--input-color); /* Couleur de fond */
+    background-color: var(--first-color-second); /* Couleur de fond */
     border-top: 2px solid var(--body-color); /* Bordure supérieure pour un effet visuel */
     padding: 0.25rem 0; /* Réduit le padding en haut et en bas */
     font-size: 0.875rem; /* Ajustez la taille de la police si nécessaire */
