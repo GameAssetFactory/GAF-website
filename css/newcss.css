@@ -1382,28 +1382,19 @@ iframe.gdrive {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    bottom: -100%;
+    bottom: -100%; /* Position initiale hors de l'écran */
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: var(--first-color-second);
     padding: 2rem 1.5rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -1px 4px var(--body-color);
     border-radius: 1.5rem 1.5rem 0 0;
-    transition: 0.3s;
+    transition: 0.3s; /* Transition pour l'animation */
   }
 
-  .header {
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background-color: var(--body-color);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.25rem 0;
-    font-size: 0.875rem;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  .nav {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0);
     transition: 0.3s;
   }
 
@@ -1417,27 +1408,42 @@ iframe.gdrive {
   }
 
   .nav__toggle {
-    font-size: 17px;
+    font-size: 17px; /* Augmentez la taille de la police ici */
     transition: 0.3s;
   }
  
   .nav__close {
     font-size: 30px;
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    display: flex; /* Assurez-vous que le conteneur utilise flexbox */
+    justify-content: right; /* Espace entre les éléments */
+    align-items: center; /* Centre verticalement les éléments */
   }
 
 
   .nav__icon{
-    font-size: 30px;
+    font-size: 30px; /* Augmentez la taille de la police ici */
+    transition: 0.3s;
+  }
+
+  .header {
+    width: 100%; /* Assurez-vous que la largeur est à 100% */
+    height: 70px; /* Réduit la hauteur de la barre de navigation */
+    position: fixed; /* Reste fixe en bas */
+    bottom: 0; /* Positionne la navbar en bas */
+    left: 0; /* Aligne à gauche */
+    z-index: var(--z-fixed);
+    background-color: var(--input-color); /* Couleur de fond */
+    border-top: 2px solid var(--body-color); /* Bordure supérieure pour un effet visuel */
+    padding: 0.25rem 0; /* Réduit le padding en haut et en bas */
+    font-size: 0.875rem; /* Ajustez la taille de la police si nécessaire */
+    box-shadow: 0 -2px 5px var(--body-color); /* Ombre pour un effet de profondeur */
     transition: 0.3s;
   }
 }
 
 /* Show Menu */
 .show-menu {
-  bottom: 0;
+  bottom: 0; /* Positionne le menu visible */
 }
 
 .nav__btns, .nav__close, .nav__icon, .nav__list, .nav__link, .nav__menu, .nav__toggle, .change-theme, .home__social, .home__social-icon {
@@ -1523,15 +1529,15 @@ iframe.gdrive {
 
 
 .footer__icon {
-  width: 26px;
-  height: 26px;
+  width: 26px; /* Ajustez la taille selon vos besoins */
+  height: 26px; /* Ajustez la taille selon vos besoins */
 }
 
 
 /* Ajustement pour les appareils mobiles */
 @media screen and (max-width: 767px) {
   .footer {
-      padding-bottom: 80px;
+      padding-bottom: 80px; /* Pour éviter le chevauchement avec la navbar mobile */
       transition: 0.3s;
   }
 }
