@@ -143,6 +143,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -1453,17 +1456,15 @@ iframe.gdrive {
 
 /*=================== Footer ==================*/
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background-color: var(--first-color-second);
-  padding-top: 0.25rem; /* Réduit de 0.5rem à 0.25rem */
+  padding-top: 0.25rem;
+  margin-top: 2rem;
   transition: 0.3s;
 }
 
 .footer__bg {
-  padding: 0.5rem 0; /* Réduit de 1rem à 0.5rem */
+  padding: 0.5rem 0;
   text-align: center;
   transition: 0.3s;
 }
@@ -1476,14 +1477,14 @@ iframe.gdrive {
 .footer__container {
   display: flex;
   flex-direction: column;
-  row-gap: 0.25rem; /* Réduit de 0.5rem à 0.25rem */
+  row-gap: 0.25rem;
   max-width: 968px;
   margin: 0 auto;
   transition: 0.3s;
 }
 
 .footer__title {
-  font-size: 1rem; /* Réduit la taille du titre */
+  font-size: 1rem;
   transition: 0.3s;
 }
 
@@ -1514,27 +1515,27 @@ iframe.gdrive {
 }
 
 .footer__copy {
-  font-size: 0.7rem; /* Légèrement réduit de 0.75rem à 0.7rem */
+  font-size: 0.7rem;
   text-align: center;
   opacity: 0.7;
-  padding-top: 0.5rem; /* Réduit de 1rem à 0.5rem */
+  padding-top: 0.5rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 0.5rem; /* Réduit de 1rem à 0.5rem */
+  margin-top: 0.5rem;
   transition: 0.3s;
 }
 
 
 
 .footer__icon {
-  width: 26px; /* Ajustez la taille selon vos besoins */
-  height: 26px; /* Ajustez la taille selon vos besoins */
+  width: 26px;
+  height: 26px;
 }
 
 
 /* Ajustement pour les appareils mobiles */
 @media screen and (max-width: 767px) {
   .footer {
-      padding-bottom: 70px; /* Réduit de 80px à 70px */
+      margin-bottom: 70px;
       transition: 0.3s;
   }
 }
@@ -1576,4 +1577,9 @@ iframe.gdrive {
 .loader-hidden #loader-logo {
     opacity: 0;
     transform: scale(0.95);
+}
+
+/* Faire en sorte que le contenu principal prenne tout l'espace disponible */
+main {
+  flex: 1;
 }
