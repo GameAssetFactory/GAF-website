@@ -6,11 +6,7 @@
       "runtime": "vercel-php@0.6.0"
     }
   },
-  "redirects": [
-    {
-      "source": "/:path*.php",
-      "destination": "/:path*",
-      "permanent": true
-    }
+  "routes": [
+    { "src": "/(.*)",  "dest": "/api/index.php" }
   ]
 }
