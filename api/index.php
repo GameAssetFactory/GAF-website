@@ -1,3 +1,6 @@
+<?php
+phpinfo();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +38,7 @@
         <div class="nav-background"></div>
         <div class=nav__icon></div>
           <!-- Bouton de changement de thème -->
-          <img src="img/GameAssetFactoryLogo1024.png" alt="logo" class="nav__img" />
+          <img src="/img/GameAssetFactoryLogo1024.png" alt="logo" class="nav__img" />
         </div>
         </div>
 
@@ -83,7 +86,7 @@
 
 <body>
     <div id="loader-wrapper">
-        <img src="img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
+        <img src="/img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
     </div>
         <?php
             if(isset($_POST['page']))
@@ -91,23 +94,23 @@
                 switch($_POST['page'])
                 {
                     case 'products':
-                        include 'products.php';
+                        include __DIR__ . '/products.php';
                         break;
                     case 'portfolio':
-                        include 'portfolio.php'; 
+                        include __DIR__ . '/portfolio.php'; 
                         break;
                     case 'jobs':
-                        include 'jobs.php';
+                        include __DIR__ . '/jobs.php';
                         break;
                     case 'contact':
-                        include 'contact.php';
+                        include __DIR__ . '/contact.php';
                         break;
                     default:
-                        include 'home.php';
+                        include __DIR__ . '/home.php';
                         break; 
                 }
             } else {
-                include 'home.php';
+                include __DIR__ . '/home.php';
             }
 
                 
@@ -171,5 +174,3 @@
   </footer>
 </html>
 
-<?php
-phpinfo();
