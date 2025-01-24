@@ -38,32 +38,32 @@
         </div>
         </div>
 
-        <form class="nav__menu" id="nav-menu" method="post" action="/home">
+        <form class="nav__menu" id="nav-menu" method="post" action="">
         <ul class="nav__list">
             <li class="nav__item">
-            <a href="/home" class="nav__link <?php echo ($current_page == 'home') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="home" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'home') ? 'active' : ''; ?>">
                 <i class="uil uil-estate nav__icon"></i>Home
-            </a>
+            </button>
             </li>
             <li class="nav__item">
-            <a href="/products" class="nav__link <?php echo ($current_page == 'products') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="products" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'products') ? 'active' : ''; ?>">
                 <i class="uil uil-box nav__icon"></i>Products
-            </a>
+            </button>
             </li>
             <li class="nav__item">
-            <a href="/portfolio" class="nav__link <?php echo ($current_page == 'portfolio') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="portfolio" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'portfolio') ? 'active' : ''; ?>">
                 <i class="uil uil-briefcase nav__icon"></i>Portfolio
-            </a>
+            </button>
             </li>
             <li class="nav__item">
-            <a href="/jobs" class="nav__link <?php echo ($current_page == 'jobs') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="jobs" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'jobs') ? 'active' : ''; ?>">
                 <i class="uil uil-briefcase-alt nav__icon"></i>Jobs
-            </a>
+            </button>
             </li>
             <li class="nav__item">
-            <a href="/contact" class="nav__link <?php echo ($current_page == 'contact') ? 'active' : ''; ?>">
+            <button type="submit" name="page" value="contact" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'contact') ? 'active' : ''; ?>">
                 <i class="uil uil-envelope nav__icon"></i>Contact
-            </a>
+            </button>
             </li>
         </ul>
         <i class="uil uil-times nav__close" id="nav-close"></i>
@@ -85,9 +85,8 @@
         <img src="../img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
     </div>
         <?php
-            // Définir la page courante basée sur l'URL réécrite
-            $current_page = basename($_SERVER['REQUEST_URI']);
-            $current_page = empty($current_page) || $current_page == 'index.php' ? 'home' : $current_page;
+            // Définir la page courante basée sur le paramètre 'page' passé par URL réécrite
+            $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
             if($current_page) {
                 switch($current_page) {
