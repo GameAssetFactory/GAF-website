@@ -121,7 +121,6 @@ body.dark-theme {
 }
 .change-theme {
   font-size: 1.25rem;
-  color: var(--title-color);
  transition: 0.3s;
   cursor: pointer;
 }
