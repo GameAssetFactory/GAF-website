@@ -41,27 +41,27 @@
         <form class="nav__menu" id="nav-menu" method="post" action="">
         <ul class="nav__list">
             <li class="nav__item">
-            <button type="submit" name="page" value="home" class="nav__link active-link">
+            <button type="submit" name="page" value="home" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'home') ? 'active' : ''; ?>">
                 <i class="uil uil-estate nav__icon"></i>Home
             </button>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="products" class="nav__link">
+            <button type="submit" name="page" value="products" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'products') ? 'active' : ''; ?>">
                 <i class="uil uil-box nav__icon"></i>Products
             </button>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="portfolio" class="nav__link">
+            <button type="submit" name="page" value="portfolio" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'portfolio') ? 'active' : ''; ?>">
                 <i class="uil uil-briefcase nav__icon"></i>Portfolio
             </button>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="jobs" class="nav__link">
+            <button type="submit" name="page" value="jobs" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'jobs') ? 'active' : ''; ?>">
                 <i class="uil uil-briefcase-alt nav__icon"></i>Jobs
             </button>
             </li>
             <li class="nav__item">
-            <button type="submit" name="page" value="contact" class="nav__link">
+            <button type="submit" name="page" value="contact" class="nav__link <?php echo (isset($_POST['page']) && $_POST['page'] == 'contact') ? 'active' : ''; ?>">
                 <i class="uil uil-envelope nav__icon"></i>Contact
             </button>
             </li>
@@ -85,6 +85,9 @@
         <img src="../img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
     </div>
         <?php
+            // Au début du fichier, définir la page courante
+            $current_page = isset($_POST['page']) ? $_POST['page'] : 'home';
+
             if(isset($_POST['page']))
             {
                 switch($_POST['page'])

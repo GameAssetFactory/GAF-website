@@ -279,6 +279,11 @@ img {
   border: none;
 }
 
+.nav__link.active {
+    color: var(--first-color);
+    font-weight: bold;
+    /* autres styles pour indiquer la page active */
+}
 
 .nav__close:hover {
   color: var(--first-color);
