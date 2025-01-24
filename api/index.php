@@ -1,7 +1,3 @@
-<?php
-phpinfo();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,12 +10,12 @@ phpinfo();
     <meta property="og:title" content="&#x26CA; GameAssetFactory">
     <meta property="og:description" content="Build worlds, piece by piece">
     <meta property="og:url" content="https://gameassetfactory.com/">
-    <meta property="og:image" content="/img/GameAssetFactoryLogo1024.png"> <!-- png -->
-    <link rel="icon" href="/img/GameAssetFactoryLogopetit.ico"> <!-- ico -->
+    <meta property="og:image" content="../img/GameAssetFactoryLogo1024.png"> <!-- png -->
+    <link rel="icon" href="../img/GameAssetFactoryLogopetit.ico"> <!-- ico -->
     <title>GameAssetFactory</title>
     
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css/newcss.css" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/newcss.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
@@ -38,7 +34,7 @@ phpinfo();
         <div class="nav-background"></div>
         <div class=nav__icon></div>
           <!-- Bouton de changement de thème -->
-          <img src="/img/GameAssetFactoryLogo1024.png" alt="logo" class="nav__img" />
+          <img src="../img/GameAssetFactoryLogo1024.png" alt="logo" class="nav__img" />
         </div>
         </div>
 
@@ -86,7 +82,7 @@ phpinfo();
 
 <body>
     <div id="loader-wrapper">
-        <img src="/img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
+        <img src="../img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
     </div>
         <?php
             if(isset($_POST['page']))
@@ -122,9 +118,9 @@ phpinfo();
 
 
 
-  <script type="text/javascript" src="/js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
-  <script src="/js/ptj.js"></script>
+  <script src="../js/ptj.js"></script>
 
 
   <!--================== Footer ===============-->
