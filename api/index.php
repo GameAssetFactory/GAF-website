@@ -1,3 +1,30 @@
+<?php
+    // Définir le titre et inclure la page en même temps
+    $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
+    
+    switch($current_page) {
+        case 'products':
+            $page_title = "Products - GameAssetFactory";
+            $include_file = 'products.php';
+            break;
+        case 'portfolio':
+            $page_title = "Portfolio - GameAssetFactory";
+            $include_file = 'portfolio.php';
+            break;
+        case 'jobs':
+            $page_title = "Jobs - GameAssetFactory";
+            $include_file = 'jobs.php';
+            break;
+        case 'contact':
+            $page_title = "Contact - GameAssetFactory";
+            $include_file = 'contact.php';
+            break;
+        default:
+            $page_title = "GameAssetFactory - Build worlds, piece by piece";
+            $include_file = 'home.php';
+            break;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +59,7 @@
   <header class="header" id="header">
     <nav class="nav container">
         <div class="nav-background"></div>
-        <div class=nav__icon></div>
+        <div class="nav__icon">
           <!-- Bouton de changement de thème -->
           <img src="../img/GameAssetFactoryLogo1024.png" alt="logo" class="nav__img" />
         </div>
@@ -80,41 +107,14 @@
     </header>
 
 
-<body>
-    <div id="loader-wrapper">
-        <img src="../img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
-    </div>
-        <?php
-            // Modifier la logique pour utiliser $_GET au lieu de $_POST
-            $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
-
-            // Définir le titre en fonction de la page
-            switch($current_page) {
-                case 'products':
-                    $page_title = "Products - GameAssetFactory";
-                    include __DIR__ . '/products.php';
-                    break;
-                case 'portfolio':
-                    $page_title = "Portfolio - GameAssetFactory";
-                    include __DIR__ . '/portfolio.php'; 
-                    break;
-                case 'jobs':
-                    $page_title = "Jobs - GameAssetFactory";
-                    include __DIR__ . '/jobs.php';
-                    break;
-                case 'contact':
-                    $page_title = "Contact - GameAssetFactory";
-                    include __DIR__ . '/contact.php';
-                    break;
-                default:
-                    $page_title = "GameAssetFactory - Build worlds, piece by piece";
-                    include __DIR__ . '/home.php';
-                    break; 
-            }
-        ?>
+  <body>
+      <div id="loader-wrapper">
+          <img src="../img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
+      </div>
+      <?php include __DIR__ . '/' . $include_file; ?>
 
 
-    </body>
+  </body>
 
 
 
