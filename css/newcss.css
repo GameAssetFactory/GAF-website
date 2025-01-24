@@ -7,7 +7,7 @@
 
  @font-face {
   font-family: 'Mi Sans';
-  src: url('assets/font/MiSans.ttf') format('truetype');
+  src: url('../font/MiSans.ttf') format('truetype');
   font-weight: normal; /* ou bold selon la police */
   font-style: normal; /* ou italic selon la police */
 }
