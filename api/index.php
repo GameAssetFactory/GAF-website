@@ -1,3 +1,10 @@
+<?php
+// Ajouter ce code au tout début du fichier, avant le DOCTYPE
+if ($_SERVER['REQUEST_URI'] == '/') {
+    header('Location: /home');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
