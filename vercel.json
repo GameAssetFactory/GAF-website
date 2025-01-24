@@ -6,5 +6,16 @@
   },
   "routes": [
     { "src": "/(.*\\.php$)", "dest": "/api/$1" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*\\.php$)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        }
+      ]
+    }
   ]
 }
