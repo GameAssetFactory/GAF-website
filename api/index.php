@@ -1,10 +1,3 @@
-<?php
-// Ajouter ce code au tout début du fichier, avant le DOCTYPE
-if ($_SERVER['REQUEST_URI'] == '/') {
-    header('Location: /home');
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,27 +41,27 @@ if ($_SERVER['REQUEST_URI'] == '/') {
         <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
             <li class="nav__item">
-                <a href="/home" class="nav__link <?php echo (!isset($_GET['page']) || $_GET['page'] == 'home') ? 'active' : ''; ?>">
+                <a href="/home/" class="nav__link <?php echo (!isset($_GET['page']) || $_GET['page'] == 'home') ? 'active' : ''; ?>">
                     <i class="uil uil-estate nav__icon"></i>Home
                 </a>
             </li>
             <li class="nav__item">
-                <a href="/products" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'products') ? 'active' : ''; ?>">
+                <a href="/products/" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'products') ? 'active' : ''; ?>">
                     <i class="uil uil-box nav__icon"></i>Products
                 </a>
             </li>
             <li class="nav__item">
-                <a href="/portfolio" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'portfolio') ? 'active' : ''; ?>">
+                <a href="/portfolio/" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'portfolio') ? 'active' : ''; ?>">
                     <i class="uil uil-briefcase nav__icon"></i>Portfolio
                 </a>
             </li>
             <li class="nav__item">
-                <a href="/jobs" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'jobs') ? 'active' : ''; ?>">
+                <a href="/jobs/" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'jobs') ? 'active' : ''; ?>">
                     <i class="uil uil-briefcase-alt nav__icon"></i>Jobs
                 </a>
             </li>
             <li class="nav__item">
-                <a href="/contact" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">
+                <a href="/contact/" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">
                     <i class="uil uil-envelope nav__icon"></i>Contact
                 </a>
             </li>
