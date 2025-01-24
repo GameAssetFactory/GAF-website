@@ -41,12 +41,12 @@
         <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
             <li class="nav__item">
-                <a href="?page=home" class="nav__link <?php echo (!isset($_GET['page']) || $_GET['page'] == 'home') ? 'active' : ''; ?>">
+                <a href="/home" class="nav__link <?php echo (!isset($_GET['page']) || $_GET['page'] == 'home') ? 'active' : ''; ?>">
                     <i class="uil uil-estate nav__icon"></i>Home
                 </a>
             </li>
             <li class="nav__item">
-                <a href="?page=products" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'products') ? 'active' : ''; ?>">
+                <a href="/products" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'products') ? 'active' : ''; ?>">
                     <i class="uil uil-box nav__icon"></i>Products
                 </a>
             </li>
