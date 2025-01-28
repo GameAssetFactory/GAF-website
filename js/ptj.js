@@ -104,11 +104,17 @@ let swiperJobs = new Swiper(".jobs__container", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+    disabledClass: 'swiper-button-disabled',
   },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
+  slidesPerView: 1,
+  spaceBetween: 30,
+  speed: 400,
+  allowSlideNext: true,
+  allowSlidePrev: true,
 });
 
 /*==================== LIEN ACTIF DES SECTIONS DÉFILEMENT ====================*/

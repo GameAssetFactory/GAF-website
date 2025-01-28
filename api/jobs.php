@@ -5,146 +5,267 @@
       <section class="jobs section" id="jobs">
         <br><br>
         <h2 class="section__title">Jobs</h2>
-        <div class="jobs__container container grid">
-          <div class="jobs__content">
-            <p class="section__subtitle">Why work with us?</p>
+        <span class="section__subtitle">Why work with us?</span>
+
+        <!-- Why work with us section -->
+        <div class="jobs__intro container">
+          <div class="jobs__intro-content">
+            <h3>Why work with us?</h3>
             <p class="jobs__description">
-              More than experience we are looking for real talent, passionate about the gaming industry and art. We bring projects, quality control, management while you can express yourself through your work in a flexible environment. Together we can work on bigger and more complex projects, where everyone bring his own expertise and solutions. Let's create together this synergy that will push us making awesome stories.
+              More than experience we are looking for real talent, passionate about the gaming industry and art. We bring projects, quality control, management while you can express yourself through your work in a flexible environment.
             </p>
             <p class="jobs__description">
-              All jobs are for freelancers and remote.
+              Together we can work on bigger and more complex projects, where everyone brings his own expertise and solutions. Let's create together this synergy that will push us to make awesome stories.
             </p>
-          </div>
-
-          <!-- 3D Environment Artist -->
-          <div class="jobs__card">
-            <h3 class="jobs__card-title">3D Environment Artist</h3>
-            <h4 class="jobs__card-subtitle">APERÇU:</h4>
-            <p class="jobs__card-preview">
-              Creation of high-quality 3D environments in Unreal Engine 5, specializing in both high-poly and low-poly modeling.
-            </p>
-            
-            <span class="button button--flex button--small button--link jobs__button">
-              Voir plus
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="jobs__modal">
-              <div class="jobs__modal-content">
-                <h4 class="jobs__modal-title">3D Environment Artist - Détails du poste</h4>
-                <i class="uil uil-times jobs__modal-close"></i>
-                
-                <div class="jobs__modal-services grid">
-                  <h4 class="jobs__card-subtitle">RESPONSIBILITIES:</h4>
-                  <ul class="jobs__card-list">
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Creating high-quality and optimized 3D environments inside Unreal Engine 5 following a specific art direction and technical constraints</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Creating 3D high-poly (for Nanite) and Low poly (for LOD's workflow) photo-realistic models</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Creating Modular structural assets and Props</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Working within a defined common and collaborative pipeline</p>
-                    </li>
-                  </ul>
-
-                  <h4 class="jobs__card-subtitle">COMPETENCES REQUIRED:</h4>
-                  <ul class="jobs__card-list">
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Experience in game asset creation</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>3D modeling: Sculpting, hard-surface</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Strong sense of realism, details, composition, lightning, colors</p>
-                    </li>
-                  </ul>
-
-                  <h4 class="jobs__card-subtitle">SOFTWARES:</h4>
-                  <p class="jobs__card-text">
-                    Blender (Highly Preferred), Maya, 3D, Zbrush, Substance Painter, Substance Designer, Unreal Engine 5
-                  </p>
-                </div>
-              </div>
+            <div class="jobs__tags">
+              <span class="jobs__tag">Remote Work</span>
+              <span class="jobs__tag">Flexible Hours</span>
+              <span class="jobs__tag">Freelance</span>
             </div>
-          </div>
-
-          <!-- 3D Artist -->
-          <div class="jobs__card">
-            <h3 class="jobs__card-title">3D Artist</h3>
-            <h4 class="jobs__card-subtitle">APERÇU:</h4>
-            <p class="jobs__card-preview">
-              Creation of optimized 3D models with expertise in both high-poly and low-poly modeling techniques.
-            </p>
-            
-            <span class="button button--flex button--small button--link jobs__button">
-              Voir plus
-              <i class="uil uil-arrow-right button__icon"></i>
-            </span>
-
-            <div class="jobs__modal">
-              <div class="jobs__modal-content">
-                <h4 class="jobs__modal-title">3D Artist - Détails du poste</h4>
-                <i class="uil uil-times jobs__modal-close"></i>
-                
-                <div class="jobs__modal-services grid">
-                  <h4 class="jobs__card-subtitle">RESPONSIBILITIES:</h4>
-                  <ul class="jobs__card-list">
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Creating high-quality and optimized 3D models following specific art direction</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Creating clean 3D high-poly and Low poly models from references</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>UV unwrapping and texturing</p>
-                    </li>
-                  </ul>
-
-                  <h4 class="jobs__card-subtitle">COMPETENCES REQUIRED:</h4>
-                  <ul class="jobs__card-list">
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Experience in game asset creation</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>Strong sense of realism, details, composition</p>
-                    </li>
-                    <li class="jobs__modal-service">
-                      <i class="uil uil-check-circle jobs__modal-icon"></i>
-                      <p>UV unwrapping and layout experience</p>
-                    </li>
-                  </ul>
-
-                  <h4 class="jobs__card-subtitle">SOFTWARES:</h4>
-                  <p class="jobs__card-text">
-                    Blender (Highly Preferred), Maya, 3D, Zbrush, Substance Painter, Substance Designer, Unreal Engine 5
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="jobs__form">
-            <h3 class="jobs__form-title">Apply Form</h3>
-            <!-- Insérez ici votre formulaire d'application (wpforms) -->
+            <br><br>
           </div>
         </div>
+
+        <!-- Slider Container -->
+        <div class="jobs__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Job 1 -->jobs section
+            <div class="jobs__content grid swiper-slide">
+              <div class="jobs__data">
+                <h3 class="jobs__title">
+                  <i class="uil uil-palette jobs__icon"></i> 3D Environment Artist
+                </h3>
+                <p class="jobs__description">Creation of high-quality 3D environments in Unreal Engine 5, specializing in both high-poly and low-poly modeling.</p>
+                <a class="button button--flex button--small jobs__button">
+                  View more
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="jobs__content grid swiper-slide">
+              <div class="jobs__data">
+                <h3 class="jobs__title">
+                  <i class="uil uil-cube jobs__icon"></i> 3D Artist
+                </h3>
+                <p class="jobs__description">Creation of optimized 3D models with expertise in both high-poly and low-poly modeling techniques.</p>
+                <a class="button button--flex button--small jobs__button">
+                  View more
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- Add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Modals (outside of slider) -->
+        <!-- Modal 1 -->
+        <div class="jobs__modal">
+          <div class="jobs__modal-content">
+            <h4 class="jobs__modal-title">3D Environment Artist - Détails</h4>
+            <i class="uil uil-times jobs__modal-close"></i>
+            
+            <div class="jobs__modal-services grid">
+              <h4 class="jobs__card-subtitle">RESPONSIBILITIES:</h4>
+              <ul class="jobs__card-list">
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Creating high-quality and optimized 3D environments inside Unreal Engine 5 following a specific art direction and technical constraints</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Creating 3D high-poly (for Nanite) and Low poly (for LOD's workflow) photo-realistic models</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Creating Modular structural assets and Props</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Working within a defined common and collaborative pipeline</p>
+                </li>
+              </ul>
+
+              <h4 class="jobs__card-subtitle">COMPETENCES REQUIRED:</h4>
+              <ul class="jobs__card-list">
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Experience in game asset creation</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>3D modeling: Sculpting, hard-surface</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Strong sense of realism, details, composition, lightning, colors</p>
+                </li>
+              </ul>
+
+              <h4 class="jobs__card-subtitle">SOFTWARES:</h4>
+              <p class="jobs__card-text">
+              <i class="uil uil-check-circle jobs__modal-icon"></i> Blender (Highly Preferred), Maya, 3D, Zbrush, Substance Painter, Substance Designer, Unreal Engine 5
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="jobs__modal">
+          <div class="jobs__modal-content">
+            <h4 class="jobs__modal-title">3D Artist - Détails</h4>
+            <i class="uil uil-times jobs__modal-close"></i>
+            
+            <div class="jobs__modal-services grid">
+              <h4 class="jobs__card-subtitle">RESPONSIBILITIES:</h4>
+              <ul class="jobs__card-list">
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Creating high-quality and optimized 3D models following specific art direction</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Creating clean 3D high-poly and Low poly models from references</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>UV unwrapping and texturing</p>
+                </li>
+              </ul>
+
+              <h4 class="jobs__card-subtitle">COMPETENCES REQUIRED:</h4>
+              <ul class="jobs__card-list">
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Experience in game asset creation</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>Strong sense of realism, details, composition</p>
+                </li>
+                <li class="jobs__modal-service">
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>
+                  <p>UV unwrapping and layout experience</p>
+                </li>
+              </ul>
+
+              <h4 class="jobs__card-subtitle">SOFTWARES:</h4>
+              <p class="jobs__card-text">
+                Blender (Highly Preferred), Maya, 3D, Zbrush, Substance Painter, Substance Designer, Unreal Engine 5
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <br><br><br<br>
+      <div class="contact__scroll-container">
+        <h3 class="home__logo-large-title">You can join us</h3>
+                <a href="#Join-us" class="home__scroll-button button--flex">
+                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                <span class="home__scroll-name">Scroll down</span>
+                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+            </div>
+        </div>
+        
+        <br><br><br<br>
+      </section>
+
+
+      <section class="jobs section" id="Join-us">
+        <h2 class="section__title">Join Us</h2>
+        <span class="section__subtitle">Send us your information</span>
+
+        <div class="container grid">
+          <form action="" class="jobs__form grid">
+            <div class="jobs__inputs grid">
+              <div class="jobs__content">
+                <label for="firstname" class="jobs__label">First Name</label>
+                <div class="jobs__input-wrapper">
+                  <i class="uil uil-user jobs__input-icon"></i>
+                  <input type="text" class="jobs__input" id="firstname" required />
+                </div>
+              </div>
+
+              <div class="jobs__content">
+                <label for="lastname" class="jobs__label">Last Name</label>
+                <div class="jobs__input-wrapper">
+                  <i class="uil uil-user jobs__input-icon"></i>
+                  <input type="text" class="jobs__input" id="lastname" required />
+                </div>
+              </div>
+
+              <div class="jobs__content">
+                <label for="subject" class="jobs__label">Position</label>
+                <div class="jobs__input-wrapper">
+                  <i class="uil uil-briefcase-alt jobs__input-icon"></i>
+                  <select class="jobs__input" id="subject" required>
+                    <option value="">Select a position</option>
+                    <option value="3D Environment Artist">3D Environment Artist</option>
+                    <option value="3D Artist">3D Artist</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="jobs__content">
+              <label for="message" class="jobs__label">Message</label>
+              <div class="jobs__input-wrapper">
+                <i class="uil uil-message jobs__input-icon"></i>
+                <textarea name="message" id="message" cols="0" rows="7" class="jobs__input" required></textarea>
+              </div>
+            </div>
+
+            <a href="#" class="button button--flex button--small jobs__button" id="sendEmail">
+              Send mail
+              <i class="uil uil-message button__icon"></i>
+            </a>
+          </form>
+
+          <script>
+            document.getElementById('sendEmail').addEventListener('click', function(event) {
+              event.preventDefault();
+              const firstname = document.getElementById('firstname').value;
+              const lastname = document.getElementById('lastname').value;
+              const jobChoice = document.getElementById('subject').value;
+              const message = document.getElementById('message').value;
+          
+              if (!firstname || !lastname || !jobChoice || !message) {
+                alert("Please fill in all fields.");
+                return;
+              }
+
+              const name = `${firstname} ${lastname}`;
+              const email = 'contact@gameassetfactory.com';
+              const subject = `Application ${jobChoice}`;
+              const body = `Name: ${name}\n\n${message}`;
+              const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          
+              window.location.href = mailtoLink;
+            });
+          </script>
+        </div>
+
+
+
+                    <!--================== SCROLL TOP ==================-->
+                    <a href="#" class="scrollup" id="scroll-up">
+          <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
       </section>
     </main>
   </body>

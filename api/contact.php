@@ -27,88 +27,88 @@
     </section>
 
     <section class="contact section" id="Contact-us">
-      <br><br>
       <h2 class="section__title">Contact via mail</h2>
       <span class="section__subtitle">Feel free to contact us for more information by mail</span>
 
-      <div class="contact__container container grid">
-        <div>
+      <div class="container grid">
+        <div class="contact__info">
           <div class="contact__information">
             <i class="uil uil-envelope-minus contact__icon"></i>
-
             <div>
               <h3 class="contact__title">Mail</h3>
-              <span class="contact__subtitle"
-                >contact@gameassetfactory.com</span
-              >
+              <span class="contact__subtitle">contact@gameassetfactory.com</span>
             </div>
           </div>
 
           <div class="contact__information">
             <i class="uil uil-map-marker contact__icon"></i>
-
             <div>
               <h3 class="contact__title">Location</h3>
-              <span class="contact__subtitle"
-                >Alsace, France</span
-              >
+              <span class="contact__subtitle">Alsace, France</span>
             </div>
           </div>
         </div>
+
         <form action="" class="contact__form grid">
           <div class="contact__inputs grid">
             <div class="contact__content">
-              <label for="name" class="content__label">Nom</label>
-              <input type="text" class="contact__input" id="name" />
+              <label for="firstname" class="contact__label">First Name</label>
+              <div class="contact__input-wrapper">
+                <i class="uil uil-user contact__input-icon"></i>
+                <input type="text" class="contact__input" id="firstname" required />
+              </div>
             </div>
-        
+
             <div class="contact__content">
-              <label for="subject" class="content__label">Sujet</label>
-              <input type="text" class="contact__input" id="subject" />
+              <label for="lastname" class="contact__label">Last Name</label>
+              <div class="contact__input-wrapper">
+                <i class="uil uil-user contact__input-icon"></i>
+                <input type="text" class="contact__input" id="lastname" required />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="subject" class="contact__label">Subject</label>
+              <div class="contact__input-wrapper">
+                <i class="uil uil-file-alt contact__input-icon"></i>
+                <input type="text" class="contact__input" id="subject" required />
+              </div>
             </div>
           </div>
-        
+
           <div class="contact__content">
-            <label for="message" class="content__label">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="0"
-              rows="7"
-              class="contact__input"
-            ></textarea>
+            <label for="message" class="contact__label">Message</label>
+            <div class="contact__input-wrapper">
+              <i class="uil uil-message contact__input-icon"></i>
+              <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+            </div>
           </div>
-        
-          <div>
-            <a
-              href="#"
-              class="button button--flex button--small portfolio__button"
-              id="sendEmail"
-            >
-              Envoyer le mail
-              <i class="uil uil-message button__icon"></i>
-            </a>
-          </div>
+
+          <button type="submit" class="contact__button" id="sendEmail">
+            Send
+            <i class="uil uil-message button__icon"></i>
+          </button>
         </form>
-        
+
         <script>
           document.getElementById('sendEmail').addEventListener('click', function(event) {
-            event.preventDefault(); // Empêche le comportement par défaut du lien
-            const name = document.getElementById('name').value;
+            event.preventDefault();
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('lastname').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
         
-            // Vérifie si le nom ou le message est vide
-            if (!name || !message) {
-              alert("Veuillez remplir tous les champs."); // Alerte l'utilisateur
-              return; // Ne fait rien si l'un des champs est vide
+            if (!firstname || !lastname || !subject || !message) {
+              alert("Please fill in all fields.");
+              return;
             }
 
+            const name = `${firstname} ${lastname}`;
             const email = 'contact@gameassetfactory.com';
-            const body = `Nom: ${name}\n${message}`;
+            const body = `From: ${name}\n\n${message}`;
             const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         
-            window.location.href = mailtoLink; // Ouvre le client de messagerie
+            window.location.href = mailtoLink;
           });
         </script>
       </div>
