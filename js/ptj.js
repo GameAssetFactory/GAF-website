@@ -74,10 +74,10 @@ tabs.forEach(tab =>{
 })      
 */
 
-/*======================= Modal des services ===================*/
-const modalViews = document.querySelectorAll(".services__modal"),
-  modalBtns = document.querySelectorAll(".services__button"),
-  modalCloses = document.querySelectorAll(".services__modal-close");
+/*======================= Modal des jobs ===================*/
+const modalViews = document.querySelectorAll(".jobs__modal"),
+  modalBtns = document.querySelectorAll(".jobs__button"),
+  modalCloses = document.querySelectorAll(".jobs__modal-close");
 
 let modal = function (modalClick) {
   modalViews[modalClick].classList.add("active-modal");
@@ -97,11 +97,10 @@ modalCloses.forEach((modalClose) => {
   });
 });
 
-/*======================= Swiper du portfolio ===================*/
-var swiper = new Swiper(".portfolio__container", {
+/*======================= Swiper des jobs ===================*/
+let swiperJobs = new Swiper(".jobs__container", {
   cssMode: true,
   loop: true,
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
