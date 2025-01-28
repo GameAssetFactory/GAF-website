@@ -77,9 +77,17 @@ let swiperJobs = new Swiper(".jobs__container", {
   spaceBetween: 30,
   grabCursor: true,
   effect: 'slide',
-  speed: 400
+  speed: 400,
+  observer: true,
+  observeParents: true,
+  resizeObserver: true,
+  updateOnWindowResize: true
 });
 
+// Mise à jour du Swiper lors du redimensionnement
+window.addEventListener('resize', () => {
+  swiperJobs.update();
+});
 
 /*==================== LIEN ACTIF DES SECTIONS DÉFILEMENT ====================*/
 const sections = document.querySelectorAll("section[id]");

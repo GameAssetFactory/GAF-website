@@ -84,9 +84,10 @@
             </div>
           </div>
 
-          <button type="submit" class="contact__button" id="sendEmail">
-            Send
-            <i class="uil uil-message button__icon"></i>
+            <a href="#" class="button button--flex button--small contact__button" id="sendEmail">
+              Send mail
+              <i class="uil uil-message button__icon"></i>
+            </a>
           </button>
         </form>
 

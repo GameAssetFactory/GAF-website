@@ -190,7 +190,7 @@
         <div class="container grid">
           <form action="" class="jobs__form grid">
             <div class="jobs__inputs grid">
-              <div class="jobs__content">
+            <div class="jobs__content1">
                 <label for="firstname" class="jobs__label">First Name</label>
                 <div class="jobs__input-wrapper">
                   <i class="uil uil-user jobs__input-icon"></i>
@@ -198,7 +198,7 @@
                 </div>
               </div>
 
-              <div class="jobs__content">
+              <div class="jobs__content1">
                 <label for="lastname" class="jobs__label">Last Name</label>
                 <div class="jobs__input-wrapper">
                   <i class="uil uil-user jobs__input-icon"></i>
@@ -206,7 +206,7 @@
                 </div>
               </div>
 
-              <div class="jobs__content">
+              <div class="jobs__content1">
                 <label for="subject" class="jobs__label">Position</label>
                 <div class="jobs__input-wrapper">
                   <i class="uil uil-briefcase-alt jobs__input-icon"></i>
@@ -219,11 +219,11 @@
               </div>
             </div>
 
-            <div class="jobs__content">
+            <div class="jobs__content1">
               <label for="message" class="jobs__label">Message</label>
               <div class="jobs__input-wrapper">
                 <i class="uil uil-message jobs__input-icon"></i>
-                <textarea name="message" id="message" cols="0" rows="7" class="jobs__input" required></textarea>
+                <textarea name="message" id="message" cols="0" rows="4" class="jobs__input" required></textarea>
               </div>
             </div>
 
@@ -257,11 +257,13 @@
           </script>
         </div>
 
-        <!--================== SCROLL TOP ==================-->
-        <a href="#" class="scrollup" id="scroll-up">
+
+      </section>
+
+              <!--================== SCROLL TOP ==================-->
+              <a href="#" class="scrollup" id="scroll-up">
           <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
-      </section>
     </main>
   </body>
 </html>

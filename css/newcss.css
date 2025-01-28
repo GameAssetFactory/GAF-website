@@ -933,12 +933,20 @@ iframe.gdrive {
   gap: 0.75rem;
 }
 
-.jobs__content {
+.jobs__content1 {
   position: relative;
-  background-color: var(--container-color);
+  background: var(--container-color);
   border-radius: .5rem;
   padding: 0.75rem;
-  min-height: 90px;
+  min-height: 30px;
+  height: auto;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.jobs__content1 textarea {
+  min-height: auto;
+  height: 150px;
 }
 
 .jobs__label {
@@ -951,7 +959,7 @@ iframe.gdrive {
 .jobs__input {
   width: 100%;
   background: none;
-  color: var(--text-color-light);
+  color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   border: none;
@@ -999,14 +1007,14 @@ textarea.jobs__input {
     grid-template-columns: 1fr;
   }
   
-  .jobs__content {
+  .jobs__content1 {
     min-height: 80px;
   }
 }
 
 /* Pour les très petits écrans */
 @media screen and (max-width: 350px) {
-  .jobs__content {
+  .jobs__content1 {
     padding: .75rem .5rem;
   }
 }
@@ -2310,7 +2318,7 @@ flex-direction: column;
 .contact__input {
   width: 100%;
   background: none;
-  color: var(--text-color-light);
+  color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   border: none;
@@ -2338,19 +2346,31 @@ textarea.contact__input {
 }
 
 .contact__button {
-  width: 100%;
+  width: 100%; /* Pleine largeur */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Pour centrer le contenu */
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
   background-color: var(--first-color);
-  color: #FFF;
-  padding: 0.75rem;
-  border-radius: .5rem;
-  text-align: center;
+  color: #fff;
   cursor: pointer;
   transition: .3s;
-  border: none;
 }
 
 .contact__button:hover {
   background-color: var(--first-color-alt);
+}
+
+.contact__button .button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.contact__button:hover .button__icon {
+  transform: translateX(.25rem);
 }
 
 .contact__info {
@@ -2391,5 +2411,47 @@ textarea.contact__input {
   
   .contact__content {
     min-height: 80px;
+  }
+}
+
+/* Swiper responsive fixes */
+@media screen and (max-width: 768px) {
+  .jobs__content {
+    min-height: auto;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .jobs__data {
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  #Join-us .jobs__form {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  #Join-us .jobs__inputs {
+    grid-template-columns: 1fr;
+  }
+
+  #Join-us .jobs__content1 {
+    width: 100%;
   }
 }
