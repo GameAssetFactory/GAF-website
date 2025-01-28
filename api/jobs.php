@@ -249,7 +249,7 @@
               const name = `${firstname} ${lastname}`;
               const email = 'contact@gameassetfactory.com';
               const subject = `Application ${jobChoice}`;
-              const body = `Name: ${name}\n\n${message}`;
+              const body = `From: ${name}\n\n${message}`;
               const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
           
               window.location.href = mailtoLink;
