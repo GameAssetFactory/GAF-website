@@ -1,19 +1,32 @@
-![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) Bienvenue sur mon Portfolio 👨‍💻 !
+![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) Welcome to Game Asset Factory 👨‍💻!
 =============================================================================================================================
-## Visiter le site ICI
 
-[daniels-soares67-portfolio.vercel.app](https://daniels-soares67-portfolio.vercel.app/)
+## Visit our website HERE
+
+[game-asset-factory.com](https://gameassetfactory.vercel.app/)
 
 ## Description
 
-Ce dépôt contient le code source et les fichiers de mon site web de portfolio personnel. Le site est développé en utilisant HTML, CSS et JavaScript.
-Le site web de portfolio personnel met en avant mes compétences, mes projets et mes expériences en tant que développeur web. Il sert de plateforme en ligne pour mettre en lumière mon travail et fournir des informations sur mon parcours et mon expertise.
+This repository contains the source code and files for the Game Asset Factory website. The site is developed using HTML, CSS, PHP, and JavaScript.
+Game Asset Factory is a professional game art studio platform that showcases our services, portfolio, and expertise in creating high-quality game assets. Our website serves as a central hub for potential clients to discover our work and connect with our team.
 
-## Fonctionnalités
+## Features
 
-- **Accueil** : Une introduction personnelle qui offre un aperçu de mes compétences et de mes intérêts.
-- **À propos** : Détails sur mon parcours professionnel, ma formation et mon expérience pertinente.
-- **Projets** : Présentation des projets sur lesquels j'ai travaillé, avec des descriptions, des captures d'écran et des liens vers des démos en direct ou des dépôts.
-- **Compétences** : Liste des langages de programmation, frameworks et outils que je maîtrise.
-- **Contact** : Différentes manières de me joindre, notamment par e-mail, sur les réseaux sociaux ou via un formulaire de contact.
+- **Home**: A welcoming introduction to our game art studio and our core services.
+- **About**: Information about our studio, our team, and our approach to game asset creation.
+- **Portfolio**: Showcase of our game art projects, including 3D models, animations, and visual effects.
+- **Services**: Detailed information about our game art services, including:
+  - 3D Modeling
+  - Character Design
+  - Environment Art
+  - Animation
+  - Visual Effects
+- **Contact**: Multiple ways to get in touch with our team for project inquiries and collaborations.
 
+## Technologies Used
+
+- HTML5
+- CSS3
+- PHP
+- JavaScript
+- Responsive Design
