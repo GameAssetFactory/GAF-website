@@ -29,7 +29,7 @@
         <!-- Slider Container -->
         <div class="jobs__container container swiper-container">
           <div class="swiper-wrapper">
-            <!-- Job 1 -->jobs section
+            <!-- Job 1 -->
             <div class="jobs__content grid swiper-slide">
               <div class="jobs__data">
                 <h3 class="jobs__title">
@@ -58,14 +58,15 @@
             </div>
           </div>
 
-          <!-- Add arrows -->
+          <!-- Navigation -->
           <div class="swiper-button-next">
             <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
           </div>
           <div class="swiper-button-prev">
             <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
           </div>
-          <!-- Add pagination -->
+
+          <!-- Pagination -->
           <div class="swiper-pagination"></div>
         </div>
 
@@ -168,21 +169,17 @@
           </div>
         </div>
 
-
-
-
-        <br><br><br<br>
-      <div class="contact__scroll-container">
-        <h3 class="home__logo-large-title">You can join us</h3>
-                <a href="#Join-us" class="home__scroll-button button--flex">
-                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                <span class="home__scroll-name">Scroll down</span>
-                <i class="uil uil-arrow-down home__scroll-arrow"></i>
-                </a>
-            </div>
+        <br><br><br><br>
+        <div class="contact__scroll-container">
+          <h3 class="home__logo-large-title">You can join us</h3>
+          <a href="#Join-us" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
         </div>
         
-        <br><br><br<br>
+        <br><br><br><br>
       </section>
 
 
@@ -260,10 +257,8 @@
           </script>
         </div>
 
-
-
-                    <!--================== SCROLL TOP ==================-->
-                    <a href="#" class="scrollup" id="scroll-up">
+        <!--================== SCROLL TOP ==================-->
+        <a href="#" class="scrollup" id="scroll-up">
           <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
       </section>

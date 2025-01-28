@@ -35,44 +35,6 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*======================= ACCORD DES COMPÉTENCES ======================*/
-
-const skillsContent = document.getElementsByClassName("skills__content"),
-  skillsHeader = document.querySelectorAll(".skills__header");
-
-function toggleSkills() {
-  let itemClass = this.parentNode.className;
-
-  for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = "skills__content skills__close";
-  }
-  if (itemClass === "skills__content skills__close") {
-    this.parentNode.className = "skills__content skills__open";
-  }
-}
-
-skillsHeader.forEach((el) => {
-  el.addEventListener("click", toggleSkills);
-});
-
-/*============== Qualifications des compétences ===============*/
-
-/*const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
-        tabContents.forEach(tabContent =>{
-            tabContent.classList.remove('qualification__active')
-        })
-        target.classList.add('qualification__active')
-        tab.forEach(tab =>{
-            tab.classList.remove('qualification__active')
-        })
-        tab.classList.add('qualification__active')
-    })
-})      
-*/
 
 /*======================= Modal des jobs ===================*/
 const modalViews = document.querySelectorAll(".jobs__modal"),
@@ -109,13 +71,15 @@ let swiperJobs = new Swiper(".jobs__container", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
   },
   slidesPerView: 1,
   spaceBetween: 30,
-  speed: 400,
-  allowSlideNext: true,
-  allowSlidePrev: true,
+  grabCursor: true,
+  effect: 'slide',
+  speed: 400
 });
+
 
 /*==================== LIEN ACTIF DES SECTIONS DÉFILEMENT ====================*/
 const sections = document.querySelectorAll("section[id]");
