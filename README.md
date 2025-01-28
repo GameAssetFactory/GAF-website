@@ -3,7 +3,7 @@
 
 ## Visit our website HERE
 
-[game-asset-factory.com](https://gameassetfactory.vercel.app/)
+https://gameassetfactory.vercel.app/
 
 ## Description
 
@@ -21,6 +21,12 @@ Game Asset Factory is a professional game art studio platform that showcases our
   - Environment Art
   - Animation
   - Visual Effects
+- **Jobs**: Career opportunities at Game Asset Factory:
+  - Current job openings
+  - Application process
+  - Required skills and qualifications
+  - Studio culture and benefits
+  - Internship opportunities
 - **Contact**: Multiple ways to get in touch with our team for project inquiries and collaborations.
 
 ## Technologies Used
