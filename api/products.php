@@ -10,7 +10,6 @@
         <!-- Why work with us section -->
         <div class="products__intro container">
           <div class="products__intro-content">
-            <h3>About Game Asset Factory</h3>
             <p class="products__description">
               Game Asset Factory specializes in creating high-quality digital content for games, architectural visualization, and other interactive projects. We pride ourselves on delivering polished assets with consistent quality and unique character, using powerful and efficient tools to meet any challenge.
             </p>
@@ -57,7 +56,6 @@
 
         <div class="products__intro container">
           <div class="products__intro-content">
-            <h3>Discover Our Work</h3>
             <p class="products__description">
               Want to see our expertise in action? <br>
               Our gallery showcases our finest 3D creations, from stunning props to detailed environments. Each piece demonstrates our commitment to quality and attention to detail.
