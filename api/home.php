@@ -45,43 +45,19 @@
               <h3 class="home__subtitle">
                 Video Games, Architectural visualization and Renders
               </h3>
-              <a href="/contact/" class="button button--flex button--small portfolio__button <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">
+              <a href="/contact/" class="button button--flex button--small contact__button <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">
                 Contact us <i class="uil uil-message button__icon"></i>
               </a>
             </div>
-
-
-
-
             
           </div>
-
-
-
-
-          <!-- Ajout du logo large -->
-          <div class="home__logo-large">
-            <img src="../img/GameAssetFactoryLogo1024.png" alt="Game Art Studio Logo" class="home__logo-large-img">
-
-          </div>
-          <div class="home__scroll-container">
-          <h3 class="home__logo-large-title">Wish you a good day !</h3>
-            <a href="#About" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i>
-            </a>
-          </div>
-
           
         </div>
-        
-        <br><br><br><br><br>
       </section>
 
       <!--========================= About Us =====================-->
       <section class="about section" id="About">
-      <br><br><br><br><br>
+      <br><br>
 
         <h2 class="section__title">ABOUT US</h2>
         <div class="about__container container grid">
@@ -138,16 +114,6 @@
           <div class="services__content">
             <div class="services__card">
               <div class="services__header">
-                <i class="uil uil-box services__icon"></i>
-                <h3 class="services__title">Ready-to-use packs</h3>
-              </div>
-              <p class="services__description">
-                Our packs provide ready-to-use assets which are grouped by theme or functionality. We focus on giving complete solutions in order to prevent from additional work for our customers. Finally, assets are easily customizable and adaptable to any project.
-              </p>
-            </div>
-
-            <div class="services__card">
-              <div class="services__header">
                 <i class="uil uil-wrench services__icon"></i>
                 <h3 class="services__title">Custom work</h3>
               </div>
@@ -158,12 +124,13 @@
 
             <div class="services__card">
               <div class="services__header">
-                <i class="uil uil-mountains services__icon"></i>
-                <h3 class="services__title">Environments</h3>
+                <i class="uil uil-box services__icon"></i>
+                <h3 class="services__title">Ready-to-use packs</h3>
               </div>
               <p class="services__description">
-                From stylized to realistic environments, Game Asset Factory provides solutions for every situation, using Hard-surface, organic modeling or Photogrammetry technique. Environments are generally composed of different asset types, like landscapes, 3D models, materials (shaders), textures, etc. This way, you can use pre-made scenes or create your own with our quality assets.
+                Our packs provide ready-to-use assets which are grouped by theme or functionality. We focus on giving complete solutions in order to prevent from additional work for our customers.
               </p>
+              <div class="services__background" style="background-image: url('../img/Gallery/1.png');"></div>
             </div>
 
             <div class="services__card">
@@ -173,6 +140,16 @@
               </div>
               <p class="services__description">
                 Our ready-to-use 3D models are made to be integrated easily in any project. They are also meant to be customizable and resource-friendly. Every model come with its own materials, textures, LODs (Level of details) and collision. We offer a wide variety of models!
+              </p>
+            </div>
+
+            <div class="services__card">
+              <div class="services__header">
+                <i class="uil uil-mountains services__icon"></i>
+                <h3 class="services__title">Environments</h3>
+              </div>
+              <p class="services__description">
+                From stylized to realistic environments, Game Asset Factory provides solutions for every situation, using Hard-surface, organic modeling or Photogrammetry technique. Environments are generally composed of different asset types, like landscapes, 3D models, materials (shaders), textures, etc. This way, you can use pre-made scenes or create your own with our quality assets.
               </p>
             </div>
 
@@ -194,6 +171,7 @@
               <p class="services__description">
                 Quality is assured by our support through corrections, upgrades and suggestions. Feel free to contact us if you have any question or suggestion.
               </p>
+              <div class="services__background" style="background-image: url('../img/Gallery/Happy_Hotline.png');"></div>
             </div>
           </div>
         </div>

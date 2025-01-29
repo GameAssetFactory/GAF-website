@@ -106,8 +106,8 @@
 
             const name = `${firstname} ${lastname}`;
             const email = 'contact@gameassetfactory.com';
-            const body = `From: ${name}\n\n${message}`;
-            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            const formattedSubject = `${subject} - From: ${name}`;
+            const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(formattedSubject)}&body=${encodeURIComponent(message)}`;
         
             window.location.href = mailtoLink;
           });

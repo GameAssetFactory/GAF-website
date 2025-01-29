@@ -89,9 +89,9 @@
                 $page_title = "Products - GameAssetFactory";
                 include __DIR__ . '/products.php';
                 break;
-            case 'portfolio':
-                $page_title = "Portfolio - GameAssetFactory";
-                include __DIR__ . '/portfolio.php'; 
+            case 'gallery':
+                $page_title = "Gallery - GameAssetFactory";
+                include __DIR__ . '/gallery.php'; 
                 break;
             case 'jobs':
                 $page_title = "Jobs - GameAssetFactory";

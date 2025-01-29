@@ -60,10 +60,10 @@
 
           <!-- Navigation -->
           <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            <i class="uil uil-angle-right-b swiper-jobs-icon"></i>
           </div>
           <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            <i class="uil uil-angle-left-b swiper-jobs-icon"></i>
           </div>
 
           <!-- Pagination -->
@@ -81,42 +81,35 @@
               <h4 class="jobs__card-subtitle">RESPONSIBILITIES:</h4>
               <ul class="jobs__card-list">
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Creating high-quality and optimized 3D environments inside Unreal Engine 5 following a specific art direction and technical constraints</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Creating high-quality and optimized 3D environments inside Unreal Engine 5 <br>&nbsp;&nbsp;following a specific art direction and technical constraints
+                </li><br>
+                <li class="jobs__modal-service">
+                  <br><i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Creating 3D high-poly (for Nanite) and Low poly (for LOD's workflow) photo-realistic models
                 </li>
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Creating 3D high-poly (for Nanite) and Low poly (for LOD's workflow) photo-realistic models</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Creating Modular structural assets and Props
                 </li>
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Creating Modular structural assets and Props</p>
-                </li>
-                <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Working within a defined common and collaborative pipeline</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Working within a defined common and collaborative pipeline
                 </li>
               </ul>
 
               <h4 class="jobs__card-subtitle">COMPETENCES REQUIRED:</h4>
               <ul class="jobs__card-list">
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Experience in game asset creation</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Experience in game asset creation
                 </li>
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>3D modeling: Sculpting, hard-surface</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;3D modeling: Sculpting, hard-surface
                 </li>
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Strong sense of realism, details, composition, lightning, colors</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Strong sense of realism, details, composition, lightning, colors
                 </li>
               </ul>
 
               <h4 class="jobs__card-subtitle">SOFTWARES:</h4>
               <p class="jobs__card-text">
-              <i class="uil uil-check-circle jobs__modal-icon"></i> Blender (Highly Preferred), Maya, 3D, Zbrush, Substance Painter, Substance Designer, Unreal Engine 5
+                <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Blender (Highly Preferred), Maya, 3D, Zbrush, Substance Painter, Substance Designer, Unreal Engine 5
               </p>
             </div>
           </div>
@@ -132,38 +125,32 @@
               <h4 class="jobs__card-subtitle">RESPONSIBILITIES:</h4>
               <ul class="jobs__card-list">
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Creating high-quality and optimized 3D models following specific art direction</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Creating high-quality and optimized 3D models following specific art direction
                 </li>
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Creating clean 3D high-poly and Low poly models from references</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Creating clean 3D high-poly and Low poly models from references
                 </li>
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>UV unwrapping and texturing</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;UV unwrapping and texturing
                 </li>
               </ul>
 
               <h4 class="jobs__card-subtitle">COMPETENCES REQUIRED:</h4>
               <ul class="jobs__card-list">
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Experience in game asset creation</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Experience in game asset creation
                 </li>
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>Strong sense of realism, details, composition</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Strong sense of realism, details, composition
                 </li>
                 <li class="jobs__modal-service">
-                  <i class="uil uil-check-circle jobs__modal-icon"></i>
-                  <p>UV unwrapping and layout experience</p>
+                  <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;UV unwrapping and layout experience
                 </li>
               </ul>
 
               <h4 class="jobs__card-subtitle">SOFTWARES:</h4>
               <p class="jobs__card-text">
-                Blender (Highly Preferred), Maya, 3D, Zbrush, Substance Painter, Substance Designer, Unreal Engine 5
+                <i class="uil uil-check-circle jobs__modal-icon"></i>&nbsp;&nbsp;Blender (Highly Preferred), Maya, 3D, Zbrush, Substance Painter, Substance Designer, Unreal Engine 5
               </p>
             </div>
           </div>
@@ -184,6 +171,7 @@
 
 
       <section class="jobs section" id="Join-us">
+        <br><br>
         <h2 class="section__title">Join Us</h2>
         <span class="section__subtitle">Send us your information</span>
 
@@ -248,8 +236,8 @@
 
               const name = `${firstname} ${lastname}`;
               const email = 'contact@gameassetfactory.com';
-              const subject = `Application ${jobChoice}`;
-              const body = `From: ${name}\n\n${message}`;
+              const subject = `Application ${jobChoice} - From: ${name}`;
+              const body = `\n\n${message}`;
               const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
           
               window.location.href = mailtoLink;

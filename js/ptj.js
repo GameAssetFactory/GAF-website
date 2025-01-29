@@ -62,7 +62,7 @@ modalCloses.forEach((modalClose) => {
 /*======================= Swiper des jobs ===================*/
 let swiperJobs = new Swiper(".jobs__container", {
   cssMode: true,
-  loop: true,
+  loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
