@@ -14,7 +14,7 @@ Game Asset Factory is a professional game art studio platform that showcases our
 
 - **Home**: A welcoming introduction to our game art studio and our core services.
 - **About**: Information about our studio, our team, and our approach to game asset creation.
-- **Portfolio**: Showcase of our game art projects, including 3D models, animations, and visual effects.
+- **Gallery**: Showcase of our game art projects, including 3D models, animations, and visual effects.
 - **Services**: Detailed information about our game art services, including:
   - 3D Modeling
   - Character Design
