@@ -131,9 +131,9 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 
-/*==================== THÈME SOMBRE CLAIR ====================*/
+/*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
-const darkTheme = "dark-theme"; // Si vous avez des couleurs spécifiques pour le thème sombre, changez-les ici
+const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
 
 // Sujet précédemment sélectionné (si l'utilisateur a sélectionné)
@@ -148,10 +148,10 @@ const getCurrentIcon = () =>
 
 // Appliquer le thème sombre par défaut
 if (!selectedTheme) {
-  document.body.classList.add(darkTheme); // Ajoute la classe du thème sombre
-  themeButton.classList.add(iconTheme); // Ajoute l'icône du thème sombre
-  localStorage.setItem("selected-theme", "dark"); // Enregistre le thème sombre dans le stockage local
-  localStorage.setItem("selected-icon", iconTheme); // Enregistre l'icône du thème sombre dans le stockage local
+  document.body.classList.add(darkTheme);
+  themeButton.classList.add(iconTheme);
+  localStorage.setItem("selected-theme", "dark");
+  localStorage.setItem("selected-icon", iconTheme);
 } else {
   // Si un thème a été précédemment sélectionné, appliquez-le
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
@@ -160,17 +160,47 @@ if (!selectedTheme) {
 
 // Ajout d'une vérification pour s'assurer que l'icône est correctement définie
 if (selectedTheme === "dark" && selectedIcon !== iconTheme) {
-  themeButton.classList.add(iconTheme); // Assurez-vous que l'icône est correcte
+  themeButton.classList.add(iconTheme);
 } else if (selectedTheme === "light" && selectedIcon === iconTheme) {
-  themeButton.classList.remove(iconTheme); // Assurez-vous que l'icône est correcte
+  themeButton.classList.remove(iconTheme);
 }
 
-// Activer / désactiver le thème manuellement avec le bouton
+// Fonction pour gérer le thème en fonction du scroll
+function handleThemeOnScroll() {
+    const homeSection = document.querySelector('.home.section');
+    if (homeSection) {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition < homeSection.offsetHeight) {
+            // Dans la section home : forcer le thème sombre
+            document.body.classList.add(darkTheme);
+            themeButton.classList.add(iconTheme);
+        } else {
+            // En dehors de home : revenir au thème sélectionné
+            const savedTheme = localStorage.getItem("selected-theme");
+            const savedIcon = localStorage.getItem("selected-icon");
+            document.body.classList[savedTheme === "dark" ? "add" : "remove"](darkTheme);
+            themeButton.classList[savedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+        }
+    }
+}
+
+// Écouter le scroll
+window.addEventListener('scroll', handleThemeOnScroll);
+
+// Activate / deactivate the theme manually with the button
 themeButton.addEventListener("click", () => {
-  // Ajouter ou retirer le thème sombre / icône
-  document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
-  // Nous sauvegardons le thème et l'icône actuelle que l'utilisateur a choisie
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
+    const homeSection = document.querySelector('.home.section');
+    const scrollPosition = window.scrollY;
+    
+    // Vérifier si on est dans la section home
+    if (!homeSection || scrollPosition >= homeSection.offsetHeight) {
+        document.body.classList.toggle(darkTheme);
+        themeButton.classList.toggle(iconTheme);
+        localStorage.setItem("selected-theme", getCurrentTheme());
+        localStorage.setItem("selected-icon", getCurrentIcon());
+    }
 });
+
+// Appeler handleThemeOnScroll au chargement de la page
+document.addEventListener('DOMContentLoaded', handleThemeOnScroll);
+

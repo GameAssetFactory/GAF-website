@@ -1060,6 +1060,8 @@ textarea.jobs__input {
   justify-content: center; /* Centre horizontalement */
   gap: 2rem; /* Espace entre le texte et le bouton */
   margin-top: 2rem;
+  z-index: 3; /* Pour être au-dessus de la vidéo et de l'overlay */
+  position: relative; /* Pour que le z-index fonctionne */
 }
   /* Responsive */
 @media screen and (max-width: 768px) {
@@ -1222,7 +1224,7 @@ margin-bottom: 2rem;
   color: var(--text-color-light);
 }
 .contact__content {
-  background-color: var(--input-color);
+  background: var(--container-color);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem 0.25rem;
 }
@@ -1233,7 +1235,7 @@ margin-bottom: 2rem;
 
 .contact__input {
   width: 100%;
-  background-color: var(--input-color);
+  background: var(--container-color);
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -2124,7 +2126,7 @@ flex-direction: column;
 .products__tag {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: var(--text-color-alt);
+  background: var(--first-color-lighter);
   color: var(--first-color);
   border-radius: 1rem;
   font-size: 0.9rem;
@@ -2158,4 +2160,85 @@ flex-direction: column;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   margin-top: var(--mb-1);
+}
+
+/* Styles pour la vidéo en arrière-plan */
+.home__video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.home__background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+}
+
+.home__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Assombrit légèrement la vidéo */
+}
+
+/* Ajustement du contenu pour qu'il soit au-dessus de la vidéo */
+.home__container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Effet de fade au défilement */
+.home.section {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Ajoutez ces styles pour le texte */
+.home__title, .home__subtitle {
+  color: #fff; /* Texte blanc pour meilleure lisibilité sur la vidéo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Animation de fade au défilement */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Cette classe sera ajoutée/supprimée via JavaScript */
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+
+/* Styles pour la navigation dans la section home */
+.force-dark .nav__link:not(.active),
+.force-dark .nav__toggle,
+.force-dark .nav__close,
+.force-dark .change-theme {
+  color: #fff !important;
+}
+
+.force-dark .nav__link:hover,
+.force-dark .nav__toggle:hover,
+.force-dark .nav__close:hover,
+.force-dark .change-theme:hover {
+  color: var(--first-color) !important;
 }

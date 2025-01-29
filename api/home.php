@@ -4,6 +4,12 @@
     <main class="main">
       <!--========================= Accueil =====================-->
       <section class="home section" id="Home">
+        <div class="home__video-container">
+          <video class="home__background-video" autoplay muted loop playsinline>
+            <source src="../img/Video/gameassetfactory_background_01.mp4" type="video/mp4">
+          </video>
+          <div class="home__overlay"></div>
+        </div>
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
@@ -53,6 +59,16 @@
           </div>
           
         </div>
+        <br><br><br><br>
+        <div class="contact__scroll-container">
+          <h3 class="home__logo-large-title">Scroll down and check our studio</h3>
+          <a href="#About" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+
       </section>
 
       <!--========================= About Us =====================-->
