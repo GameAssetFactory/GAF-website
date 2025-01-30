@@ -11,38 +11,25 @@
 
             <div class="gallery__content container">
                 <?php
-                // Créer un tableau pour stocker les chemins d'images valides
+                // Au début du fichier
+                define('BASE_PATH', $_SERVER['DOCUMENT_ROOT']);
+
+                // On définit simplement le nombre d'images que vous avez
+                $numberOfImages = 82; // Ajusté pour vos 82 images
+                
+                // On crée directement le tableau d'images
                 $validImages = array();
-                
-                // Trouver le dernier numéro d'image existant
-                $lastImage = 0;
-                $i = 1;
-                while (true) {
+                for ($i = $numberOfImages; $i >= 1; $i--) {
                     $number = str_pad($i, 2, '0', STR_PAD_LEFT);
-                    $thumbnailPath = "https://gameassetfactory-website-gaf.vercel.app/img/Gallery/Thumbnails/gameassetfactory_screen_{$number}.jpg";
-                    $fullImagePath = "https://gameassetfactory-website-gaf.vercel.app/img/Gallery/gameassetfactory_screen_{$number}.jpg";
+                    // Utiliser le chemin relatif comme dans home.php
+                    $thumbnailPath = "../img/Gallery/Thumbnails/gameassetfactory_screen_{$number}.jpg";
+                    $fullImagePath = "../img/Gallery/gameassetfactory_screen_{$number}.jpg";
                     
-                    if (file_exists($thumbnailPath) && file_exists($fullImagePath)) {
-                        $lastImage = $i;
-                    } elseif ($i > $lastImage + 10) { // Si on ne trouve pas d'image pendant 10 numéros consécutifs, on arrête
-                        break;
-                    }
-                    $i++;   
-                }
-                
-                // Collecter toutes les images valides en partant du dernier numéro
-                for ($i = $lastImage; $i >= 1; $i--) {
-                    $number = str_pad($i, 2, '0', STR_PAD_LEFT);
-                    $thumbnailPath = "https://gameassetfactory-website-gaf.vercel.app/img/Gallery/Thumbnails/gameassetfactory_screen_{$number}.jpg";
-                    $fullImagePath = "https://gameassetfactory-website-gaf.vercel.app/img/Gallery/gameassetfactory_screen_{$number}.jpg";
-                    
-                    if (file_exists($thumbnailPath) && file_exists($fullImagePath)) {
-                        $validImages[] = array(
-                            'number' => $number,
-                            'thumbnail' => $thumbnailPath,
-                            'fullsize' => $fullImagePath
-                        );
-                    }
+                    $validImages[] = array(
+                        'number' => $number,
+                        'thumbnail' => $thumbnailPath,
+                        'fullsize' => $fullImagePath
+                    );
                 }
 
                 // Afficher les thumbnails
