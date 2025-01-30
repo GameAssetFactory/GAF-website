@@ -6,7 +6,7 @@
       <section class="home section" id="Home">
         <div class="home__video-container">
           <video class="home__background-video" autoplay muted loop playsinline>
-            <source src="" type="video/mp4">
+            <source src="../img/Home/Video/GAF_Home_Video.mp4" type="video/mp4">
           </video>
           <div class="home__overlay"></div>
         </div>
@@ -131,7 +131,9 @@
 
       <!--========================= About Us =====================-->
       <section class="about section" id="About">
+        <br><br>
         <h2 class="section__title">ABOUT US</h2>
+        <br><br>
         <div class="about__container">
           <div class="about__content">
             <div class="about__card">

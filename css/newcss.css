@@ -1940,6 +1940,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   width: 100%;
+  padding: 0 !important; /* Ajout de !important pour s'assurer que le padding est à 0 */
 }
 
 .about__card {
@@ -2035,13 +2036,13 @@ main {
 
 
 .services .section__title {
-  margin-bottom: -4rem; /* Réduit l'espace entre le titre et les cartes */
+  margin-bottom: 2rem; /* Changé de -4rem à 2rem pour rendre le titre visible */
 }
 
 /* Pour mobile */
 @media screen and (max-width: 768px) {
   .services .section__title {
-    margin-bottom: 1rem; /* Encore plus réduit sur mobile */
+    margin-bottom: 1rem; /* Garde une marge plus petite sur mobile */
   }
 }
 
