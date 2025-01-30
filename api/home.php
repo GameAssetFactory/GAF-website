@@ -25,6 +25,10 @@
               <a href="/contact/" class="button button--flex button--small contact__button <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">
                 Contact us <i class="uil uil-message button__icon"></i>
               </a>
+              <div class="home__info">
+                <p class="home__info-text">NEW WEBSITE IS LIVE NOW</p>
+                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by Daniels</p>
+              </div>
             </div>
             
           </div>
@@ -37,6 +41,7 @@
             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
             <span class="home__scroll-name">Scroll down</span>
             <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            
           </a>
         </div>
 
