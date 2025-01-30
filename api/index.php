@@ -9,8 +9,8 @@
     <meta property="og:site_name" content="GameAssetFactory 3D Creation">
     <meta property="og:title" content="GameAssetFactory">
     <meta property="og:description" content="Build worlds, piece by piece">
-    <meta property="og:url" content="https://gameassetfactory.vercel.app/">
-    <meta property="og:image" content="https://gameassetfactory.vercel.app/img/GameAssetFactoryLogo1024.png">
+    <meta property="og:url" content="https://gameassetfactory.com/">
+    <meta property="og:image" content="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogo1024.png">
     <link rel="icon" href="../img/GameAssetFactoryLogopetit.ico">
     <title id="pageTitle"></title>
     

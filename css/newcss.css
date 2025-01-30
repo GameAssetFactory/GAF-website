@@ -104,7 +104,6 @@ body.dark-theme {
 
 /*================= Bouton Sombre/Lumineux ===============*/
 
-
 .nav__btns {
   display: flex;
   align-items: center;
@@ -1919,9 +1918,10 @@ main {
 
 /* Mise à jour de la classe container pour la section About */
 .about__container {
-  max-width: none;
+  max-width: 1200px;
   width: 100%;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 /* Suppression de la limitation de largeur du grid container */
@@ -1933,10 +1933,8 @@ main {
 .about__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 2.5rem;
+  width: 100%;
 }
 
 .about__card {
