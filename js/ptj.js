@@ -149,20 +149,13 @@ const getCurrentIcon = () =>
 // Appliquer le thème sombre par défaut
 if (!selectedTheme) {
   document.body.classList.add(darkTheme);
-  themeButton.classList.add(iconTheme);
+  themeButton.classList.remove(iconTheme);
   localStorage.setItem("selected-theme", "dark");
-  localStorage.setItem("selected-icon", iconTheme);
+  localStorage.setItem("selected-icon", "uil-moon");
 } else {
   // Si un thème a été précédemment sélectionné, appliquez-le
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
-  themeButton.classList[selectedIcon === "uil-sun" ? "add" : "remove"](iconTheme);
-}
-
-// Ajout d'une vérification pour s'assurer que l'icône est correctement définie
-if (selectedTheme === "dark" && selectedIcon !== iconTheme) {
-  themeButton.classList.add(iconTheme);
-} else if (selectedTheme === "light" && selectedIcon === iconTheme) {
-  themeButton.classList.remove(iconTheme);
+  themeButton.classList[selectedIcon === "uil-moon" ? "remove" : "add"](iconTheme);
 }
 
 // Fonction pour gérer le thème en fonction du scroll
