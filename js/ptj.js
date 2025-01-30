@@ -146,17 +146,16 @@ const getCurrentTheme = () =>
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
-// Appliquer le thème sombre par défaut
-if (!selectedTheme) {
-  document.body.classList.add(darkTheme);
-  themeButton.classList.remove(iconTheme);
-  localStorage.setItem("selected-theme", "dark");
-  localStorage.setItem("selected-icon", "uil-moon");
-} else {
-  // Si un thème a été précédemment sélectionné, appliquez-le
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
-  themeButton.classList[selectedIcon === "uil-moon" ? "remove" : "add"](iconTheme);
-}
+// Initialisation immédiate du thème
+document.addEventListener('DOMContentLoaded', () => {
+    if (!localStorage.getItem("selected-theme")) {
+        document.body.classList.add(darkTheme);
+        themeButton.classList.remove(iconTheme);
+        localStorage.setItem("selected-theme", "dark");
+        localStorage.setItem("selected-icon", "uil-moon");
+    }
+    handleThemeOnScroll(); // Appliquer immédiatement le thème en fonction de la position
+});
 
 // Fonction pour gérer le thème en fonction du scroll
 function handleThemeOnScroll() {
