@@ -19,7 +19,7 @@
                 $i = 1;
                 while (true) {
                     $number = str_pad($i, 2, '0', STR_PAD_LEFT);
-                    $thumbnailPath = "../img/Gallery/thumbnails/gameassetfactory_screen_{$number}_Thumbnail.jpg";
+                    $thumbnailPath = "../img/Gallery/thumbnails/gameassetfactory_screen_{$number}.jpg";
                     $fullImagePath = "../img/Gallery/gameassetfactory_screen_{$number}.jpg";
                     
                     if (file_exists($thumbnailPath) && file_exists($fullImagePath)) {
