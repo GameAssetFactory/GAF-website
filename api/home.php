@@ -33,7 +33,7 @@
         <br><br><br><br>
         <div class="contact__scroll-container">
           <h3 class="home__logo-large-title">Scroll down and check our studio</h3>
-          <a href="#About" class="home__scroll-button button--flex">
+          <a href="#Services" class="home__scroll-button button--flex">
             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
             <span class="home__scroll-name">Scroll down</span>
             <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -45,6 +45,7 @@
 
       <!--========================= Services =====================-->
       <section class="services section" id="Services">
+        <br><br>
       <h2 class="section__title">OUR SERVICES</h2>
       <div class="services__container container grid">
           <div class="services__content">
@@ -114,6 +115,16 @@
               <div class="services__background" style="background-image: url('../img/Home/Happy_Hotline.png');"></div>
             </div>
           </div>
+        </div>
+
+
+        <div class="contact__scroll-container">
+          <h3 class="home__logo-large-title">Check our about us</h3>
+          <a href="#About" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
         </div>
       </section>
 
