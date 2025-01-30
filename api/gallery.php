@@ -19,22 +19,22 @@
                 $i = 1;
                 while (true) {
                     $number = str_pad($i, 2, '0', STR_PAD_LEFT);
-                    $thumbnailPath = "../img/Gallery/thumbnails/gameassetfactory_screen_{$number}.jpg";
-                    $fullImagePath = "../img/Gallery/gameassetfactory_screen_{$number}.jpg";
+                    $thumbnailPath = "./img/Gallery/thumbnails/gameassetfactory_screen_{$number}.jpg";
+                    $fullImagePath = "./img/Gallery/gameassetfactory_screen_{$number}.jpg";
                     
                     if (file_exists($thumbnailPath) && file_exists($fullImagePath)) {
                         $lastImage = $i;
                     } elseif ($i > $lastImage + 10) { // Si on ne trouve pas d'image pendant 10 numéros consécutifs, on arrête
                         break;
                     }
-                    $i++;
+                    $i++;   
                 }
                 
                 // Collecter toutes les images valides en partant du dernier numéro
                 for ($i = $lastImage; $i >= 1; $i--) {
                     $number = str_pad($i, 2, '0', STR_PAD_LEFT);
-                    $thumbnailPath = "../img/Gallery/thumbnails/gameassetfactory_screen_{$number}.jpg";
-                    $fullImagePath = "../img/Gallery/gameassetfactory_screen_{$number}.jpg";
+                    $thumbnailPath = "./img/Gallery/thumbnails/gameassetfactory_screen_{$number}.jpg";
+                    $fullImagePath = "./img/Gallery/gameassetfactory_screen_{$number}.jpg";
                     
                     if (file_exists($thumbnailPath) && file_exists($fullImagePath)) {
                         $validImages[] = array(
