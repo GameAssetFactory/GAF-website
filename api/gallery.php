@@ -11,7 +11,7 @@
 
             <div class="gallery__content container">
                 <?php
-                // Créer un tableau pour stocker les chemins d'images valides !
+                // Créer un tableau pour stocker les chemins d'images valides
                 $validImages = array();
                 
                 // Trouver le dernier numéro d'image existant
