@@ -76,6 +76,7 @@
     </nav>
   </header>
 
+
 <body>
     <div id="loader-wrapper">
         <img src="../img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">

@@ -1919,10 +1919,9 @@ main {
 
 /* Mise à jour de la classe container pour la section About */
 .about__container {
-  max-width: 1200px;
+  max-width: none;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0;
 }
 
 /* Suppression de la limitation de largeur du grid container */
@@ -1934,8 +1933,10 @@ main {
 .about__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  width: 100%;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about__card {
@@ -2188,39 +2189,60 @@ main {
   }
 
   .products__intro-content {
-    padding: 2rem 1rem;
-    min-height: auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
   }
 
-  /* Ajustement des tags pour quils s'adaptent mieux */
+  .products__description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
   .products__tags {
     justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .products__tag {
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
   }
+
+  .products__cta {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .products__button {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .products__note {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
 }
 
 
 
 .products__intro {
-  max-width: 968px;  /* Augmentation de la largeur maximale */
-  width: 90%;        /* Pour garder des marges sur les côtés */
-  margin: 0 auto;    /* Centrage */
-  padding: 0 4rem;   /* Espace pour les flèches */
+  max-width: 968px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .products__intro-content {
   background: var(--container-color);
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 1.25rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 300px;
+  height: auto;
+  min-height: 0;
 }
 
 

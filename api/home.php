@@ -132,7 +132,7 @@
       <!--========================= About Us =====================-->
       <section class="about section" id="About">
         <h2 class="section__title">ABOUT US</h2>
-        <div class="about__container container grid">
+        <div class="about__container">
           <div class="about__content">
             <div class="about__card">
               <div class="about__card-header">
@@ -174,8 +174,6 @@
             </div>
           </div>
         </div>
-
-        
       </section>
 
 
