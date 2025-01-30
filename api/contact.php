@@ -16,7 +16,7 @@
             id="discord-iframe"
             src="https://discord.com/widget?id=707136494476984351&theme=dark" 
             width="350" 
-            height="500" 
+            height="300" 
             allowtransparency="true" 
             frameborder="0" 
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
