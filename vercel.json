@@ -1,8 +1,7 @@
 {
   "functions": {
     "api/*.php": {
-      "runtime": "vercel-php@0.7.1",
-      "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
+      "runtime": "vercel-php@0.7.1"
     }
   },
   "rewrites": [

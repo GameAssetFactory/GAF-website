@@ -12,14 +12,7 @@
         <div class="discord__information">
         <p class="discord__description">Questions, suggestions, feedback, needs, news, upcoming packs, everything you need</p>
         <div class="discord-widget">
-          <iframe 
-            id="discord-iframe"
-            src="https://discord.com/widget?id=707136494476984351&theme=dark" 
-            width="350" 
-            height="500" 
-            allowtransparency="true" 
-            frameborder="0" 
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <iframe src="https://discord.com/widget?id=707136494476984351&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
       </div>
 
