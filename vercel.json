@@ -6,17 +6,7 @@
   },
   "rewrites": [
     { "source": "/", "destination": "/api/index.php" },
-    { 
-      "source": "/:page*/", 
-      "destination": "/api/index.php?page=:page",
-      "has": [
-        {
-          "type": "query",
-          "key": "page",
-          "value": "(?!wp-admin).*"
-        }
-      ]
-    },
+    { "source": "/:page/", "destination": "/api/index.php?page=:page" },
     { "source": "/(.*\\.php$)", "destination": "/api/$1" }
   ],
   "headers": [
