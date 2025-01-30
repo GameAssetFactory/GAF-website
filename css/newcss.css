@@ -1342,6 +1342,11 @@ textarea.contact__input {
   transition: .3s;
 }
 
+
+.contact__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
 .contact__button:hover {
   background-color: var(--first-color-alt);
 }

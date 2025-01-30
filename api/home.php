@@ -6,7 +6,7 @@
       <section class="home section" id="Home">
         <div class="home__video-container">
           <video class="home__background-video" autoplay muted loop playsinline>
-            <source src="../img/Video/gameassetfactory_background_01.mp4" type="video/mp4">
+            <source src="" type="video/mp4">
           </video>
           <div class="home__overlay"></div>
         </div>
