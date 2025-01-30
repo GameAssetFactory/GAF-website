@@ -3,7 +3,7 @@
 
 ## Visit our website HERE
 
-https://gameassetfactory.vercel.app/
+https://gameassetfactory.com/home/
 
 ## Description
 
