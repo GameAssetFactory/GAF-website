@@ -110,6 +110,12 @@
     ?>
 
 
+
+    <script>
+      window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+
     </body>
 
 
@@ -118,6 +124,8 @@
   <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
   <script src="../js/ptj.js"></script>
+
+
 
 
   <!--================== Footer ===============-->
