@@ -53,7 +53,8 @@
                         // Utiliser les images full size pour le swiper
                         foreach ($validImages as $image) {
                             echo "<div class='swiper-slide new-swiper-slide'>";
-                            echo "<img data-fullsize='{$image['fullsize']}' alt='Gallery image {$image['number']}' class='modal__image'>";
+                            // Ne mettre que data-fullsize, pas de src
+                            echo "<img class='modal__image' data-fullsize='{$image['fullsize']}' alt='Gallery image {$image['number']}'>";
                             echo "</div>";
                         }
                         ?>

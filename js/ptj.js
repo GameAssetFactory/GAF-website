@@ -241,28 +241,35 @@ document.addEventListener('DOMContentLoaded', function() {
     const galleryItems = document.querySelectorAll('.gallery__item');
     const modalImages = document.querySelectorAll('.modal__image');
 
-    // Ouvrir le modal et initialiser le swiper à la bonne slide
+    // Ouvrir le modal et charger l'image immédiatement
     galleryItems.forEach((item, index) => {
         item.addEventListener('click', () => {
             modal.style.display = 'flex';
-            // Charge uniquement l'image actuelle
-            modalImages[index].src = modalImages[index].dataset.fullsize;
-            newSwiper.slideTo(index, 0);
             document.body.style.overflow = 'hidden';
+            
+            // Force le chargement immédiat de l'image
+            setTimeout(() => {
+                modalImages[index].src = modalImages[index].dataset.fullsize;
+                
+                // Précharge les images adjacentes
+                if (index < modalImages.length - 1) {
+                    modalImages[index + 1].src = modalImages[index + 1].dataset.fullsize;
+                }
+                if (index > 0) {
+                    modalImages[index - 1].src = modalImages[index - 1].dataset.fullsize;
+                }
+                
+                newSwiper.slideTo(index, 0);
+            }, 0);
         });
     });
 
-    // Charger les images adjacentes lors du changement de slide
+    // S'assurer que l'image se charge à chaque changement de slide
     newSwiper.on('slideChange', function () {
         const currentIndex = newSwiper.activeIndex;
-        // Charge l'image actuelle si pas encore chargée
-        if (!modalImages[currentIndex].src) {
+        setTimeout(() => {
             modalImages[currentIndex].src = modalImages[currentIndex].dataset.fullsize;
-        }
-        // Charge l'image suivante si elle existe
-        if (modalImages[currentIndex + 1] && !modalImages[currentIndex + 1].src) {
-            modalImages[currentIndex + 1].src = modalImages[currentIndex + 1].dataset.fullsize;
-        }
+        }, 0);
     });
 
     // Fermer le modal
@@ -271,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = '';
     });
 
-    // Fermer le modal en cliquant en dehors de l'image
+    // Fermer le modal en cliquant en dehors
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.style.display = 'none';
@@ -279,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Fermer le modal avec la touche Echap
+    // Fermer avec Echap
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.style.display === 'flex') {
             modal.style.display = 'none';
