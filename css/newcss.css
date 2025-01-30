@@ -2049,34 +2049,34 @@ main {
 
 .services__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Augmenté de 250px à 400px */
+  grid-template-columns: repeat(6, 1fr); /* Utilise 6 colonnes comme base */
   gap: 1rem;
   width: 100%;
-  padding: 0 !important; /* Supprime le padding */
+  padding: 0 !important;
 }
 
 /* Première rangée */
 .services__card:nth-child(1) {
-  grid-column: span 4;
+  grid-column: span 4; /* Prend 4 colonnes */
 }
 .services__card:nth-child(2) {
-  grid-column: span 2;
+  grid-column: span 2; /* Prend 2 colonnes */
 }
 
 /* Deuxième rangée */
 .services__card:nth-child(3) {
-  grid-column: span 3;
+  grid-column: span 3; /* Prend 3 colonnes */
 }
 .services__card:nth-child(4) {
-  grid-column: span 3;
+  grid-column: span 3; /* Prend 3 colonnes */
 }
 
 /* Troisième rangée */
 .services__card:nth-child(5) {
-  grid-column: span 4;
+  grid-column: span 4; /* Prend 4 colonnes */
 }
 .services__card:nth-child(6) {
-  grid-column: span 2;
+  grid-column: span 2; /* Prend 2 colonnes */
 }
 
 .services__card {
