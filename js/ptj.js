@@ -146,15 +146,33 @@ const getCurrentTheme = () =>
 const getCurrentIcon = () =>
   themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
-// Initialisation immédiate du thème
+// Initialisation immédiate du thème pour toutes les pages
 document.addEventListener('DOMContentLoaded', () => {
-    if (!localStorage.getItem("selected-theme")) {
+    // Récupérer le thème sauvegardé
+    const savedTheme = localStorage.getItem("selected-theme");
+    const savedIcon = localStorage.getItem("selected-icon");
+
+    if (!savedTheme) {
+        // Première visite : appliquer le thème sombre par défaut
         document.body.classList.add(darkTheme);
         themeButton.classList.remove(iconTheme);
         localStorage.setItem("selected-theme", "dark");
         localStorage.setItem("selected-icon", "uil-moon");
+    } else {
+        // Appliquer le thème sauvegardé et l'icône correspondante
+        document.body.classList[savedTheme === "dark" ? "add" : "remove"](darkTheme);
+        themeButton.classList[savedIcon === "uil-moon" ? "remove" : "add"](iconTheme);
     }
-    handleThemeOnScroll(); // Appliquer immédiatement le thème en fonction de la position
+
+    // Vérifier si nous sommes sur la page d'accueil pour appliquer la logique spécifique
+    const homeSection = document.querySelector('.home.section');
+    if (homeSection) {
+        handleThemeOnScroll();
+    } else {
+        // Sur les autres pages, s'assurer que l'icône correspond au thème
+        const currentTheme = document.body.classList.contains(darkTheme) ? "dark" : "light";
+        themeButton.classList[currentTheme === "light" ? "remove" : "add"](iconTheme);
+    }
 });
 
 // Fonction pour gérer le thème en fonction du scroll
@@ -185,7 +203,11 @@ themeButton.addEventListener("click", () => {
     const scrollPosition = window.scrollY;
     
     // Vérifier si on est dans la section home
-    if (!homeSection || scrollPosition >= homeSection.offsetHeight) {
+    if (homeSection && scrollPosition < homeSection.offsetHeight) {
+        // Ne rien faire si on est dans la section home
+        return;
+    } else {
+        // En dehors de home : permettre le changement de thème
         document.body.classList.toggle(darkTheme);
         themeButton.classList.toggle(iconTheme);
         localStorage.setItem("selected-theme", getCurrentTheme());
