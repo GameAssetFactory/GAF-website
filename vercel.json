@@ -4,8 +4,10 @@
       "runtime": "vercel-php@0.7.1"
     }
   },
+  "redirects": [
+    { "source": "/", "destination": "/home/", "permanent": true }
+  ],
   "rewrites": [
-    { "source": "/", "destination": "/home/" },
     { "source": "/:page/", "destination": "/api/index.php?page=:page" },
     { "source": "/(.*\\.php$)", "destination": "/api/$1" }
   ],
