@@ -476,6 +476,19 @@ img {
 
 /*========HOME=============*/
 
+.home__social-icon {
+  font-size: 40px;
+  color: var(--first-color);
+  transition: color 0.3s;
+}
+
+.home__social-icon:hover {
+  color: var(--first-color-lighter);
+}
+
+
+
+
 .home__info {
   margin-top: 1rem;
   text-align: center;
@@ -614,7 +627,9 @@ flex-direction: column;
 .home__social-icon {
   font-size: 40px;
   color: var(--first-color);
+  transition: color 0.3s;
 }
+
 .home__social-icon:hover {
   color: var(--first-color-lighter);
 }
@@ -2567,4 +2582,6 @@ main {
 .new-swiper-pagination-bullet-active {
   background-color: var(--first-color);
 }
+
+
 

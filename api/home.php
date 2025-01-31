@@ -13,7 +13,7 @@
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
-              <!-- Vous pouvez ajouter des liens sociaux ici si nécessaire -->
+
             </div>
             <div class="home__data">
               <div class="home__logo">
@@ -27,7 +27,9 @@
               </a>
               <div class="home__info">
                 <p class="home__info-text">NEW WEBSITE IS LIVE NOW</p>
-                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by Daniels</p>
+                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by Daniels  <a href="https://github.com/NEVARLeVrai" target="_blank" class="home__social-icon">
+                <i class="uil uil-github"></i>
+              </a></a></p>
               </div>
             </div>
             

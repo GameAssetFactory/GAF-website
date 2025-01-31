@@ -49,7 +49,7 @@
             </li>
             <li class="nav__item">
                 <a href="/gallery/" class="nav__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'gallery') ? 'active' : ''; ?>">
-                    <i class="uil uil-briefcase nav__icon"></i>Gallery
+                    <i class="uil uil-images nav__icon"></i>Gallery
                 </a>
             </li>
             <li class="nav__item">
