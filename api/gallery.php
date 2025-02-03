@@ -22,8 +22,8 @@
                 for ($i = $numberOfImages; $i >= 1; $i--) {
                     $number = str_pad($i, 2, '0', STR_PAD_LEFT);
                     // Utiliser le chemin relatif comme dans home.php
-                    $thumbnailPath = "../img/Gallery/Thumbnails/gameassetfactory_screen_{$number}.jpg";
-                    $fullImagePath = "../img/Gallery/gameassetfactory_screen_{$number}.jpg";
+                    $thumbnailPath = "../img/Gallery/Thumbnails/gameassetfactory_screen_{$number}.webp";
+                    $fullImagePath = "../img/Gallery/gameassetfactory_screen_{$number}.webp";
                     
                     $validImages[] = array(
                         'number' => $number,

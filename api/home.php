@@ -17,7 +17,7 @@
             </div>
             <div class="home__data">
               <div class="home__logo">
-                <img src="../img/GameAssetFactoryLogo1024.png" alt="Game Asset Factory" class="home__logo-img">
+                <img src="../img/GameAssetFactoryLogo1024.webp" alt="Game Asset Factory" class="home__logo-img">
               </div>
               <h3 class="home__subtitle">
                 Video Games, Architectural visualization and Renders
@@ -64,7 +64,7 @@
               <p class="services__description">
                 If you want extra models, materials, textures or whatever for an existing pack, you can contact us via the "contact" page. Game Asset Factory is also available for on-demand work; it can be full environments, scenes, unique 3D models, materials, textures or functionality for your project. Every asset produced will fit with your artistic and technical direction.
               </p>
-              <div class="services__background" style="background-image: url('../img/Home/Custom_Work.jpg');"></div>
+              <div class="services__background" style="background-image: url('../img/Home/Custom_Work.webp');"></div>
             </div>
 
             <div class="services__card">
@@ -75,7 +75,7 @@
               <p class="services__description">
                 Our packs provide ready-to-use assets which are grouped by theme or functionality. We focus on giving complete solutions in order to prevent from additional work for our customers.
               </p>
-              <div class="services__background" style="background-image: url('../img/Home/Castle.jpg');"></div>
+              <div class="services__background" style="background-image: url('../img/Home/Castle.webp');"></div>
             </div>
 
             <div class="services__card">
@@ -86,7 +86,7 @@
               <p class="services__description">
                 Our ready-to-use 3D models are made to be integrated easily in any project. They are also meant to be customizable and resource-friendly. Every model come with its own materials, textures, LODs (Level of details) and collision. We offer a wide variety of models!
               </p>
-              <div class="services__background" style="background-image: url('../img/Home/3D_Assets.jpg');"></div>
+              <div class="services__background" style="background-image: url('../img/Home/3D_Assets.webp');"></div>
             </div>
 
             <div class="services__card">
@@ -97,7 +97,7 @@
               <p class="services__description">
                 From stylized to realistic environments, Game Asset Factory provides solutions for every situation, using Hard-surface, organic modeling or Photogrammetry technique. Environments are generally composed of different asset types, like landscapes, 3D models, materials (shaders), textures, etc. This way, you can use pre-made scenes or create your own with our quality assets.
               </p>
-              <div class="services__background" style="background-image: url('../img/Home/Environment.jpg');"></div>
+              <div class="services__background" style="background-image: url('../img/Home/Environment.webp');"></div>
             </div>
 
             <div class="services__card">
@@ -108,7 +108,7 @@
               <p class="services__description">
                 We like to keep things simple and powerful. Our process is to create one or several master materials that will be reused through different instances. Master materials are designed in a clear way with annotations and explicit descriptions.
               </p>
-              <div class="services__background" style="background-image: url('../img/Home/Materials.jpg');"></div>
+              <div class="services__background" style="background-image: url('../img/Home/Materials.webp');"></div>
             </div>
 
             <div class="services__card">
@@ -119,7 +119,7 @@
               <p class="services__description">
                 Quality is assured by our support through corrections, upgrades and suggestions. Feel free to contact us if you have any question or suggestion.
               </p>
-              <div class="services__background" style="background-image: url('../img/Home/Happy_Hotline.png');"></div>
+              <div class="services__background" style="background-image: url('../img/Home/Happy_Hotline.webp');"></div>
             </div>
           </div>
         </div>
