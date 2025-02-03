@@ -10,7 +10,7 @@
     <meta property="og:title" content="GameAssetFactory">
     <meta property="og:description" content="Build worlds, piece by piece">
     <meta property="og:url" content="https://gameassetfactory.com/">
-    <meta property="og:image" content="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogo1024.png">
+    <meta property="og:image" content="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogo1024.webp">
     <link rel="icon" href="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogopetit.ico">
     <title id="pageTitle"></title>
     
@@ -31,7 +31,7 @@
         <div class="nav-background"></div>
         <div class=nav__icon></div>
           <!-- Bouton de changement de thème -->
-          <img src="../img/GameAssetFactoryLogo1024.png" alt="logo" class="nav__img" />
+          <img src="../img/GameAssetFactoryLogo1024.webp" alt="logo" class="nav__img" />
         </div>
         </div>
 
@@ -79,7 +79,7 @@
 
 <body>
     <div id="loader-wrapper">
-        <img src="../img/GameAssetFactoryLogo1024.png" id="loader-logo" alt="Logo">
+        <img src="../img/GameAssetFactoryLogo1024.webp" id="loader-logo" alt="Logo">
     </div>
     <?php
         $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
