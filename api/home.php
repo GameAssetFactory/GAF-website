@@ -26,7 +26,7 @@
                 Contact us <i class="uil uil-message button__icon"></i>
               </a>
               <div class="home__info">
-                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by Daniels  <a href="https://github.com/NEVARLeVrai" target="_blank" class="home__social-icon">
+                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by NEVAR  <a href="https://github.com/NEVARLeVrai" target="_blank" class="home__social-icon">
                 <i class="uil uil-github"></i>
               </a></a></p>
               </div>
