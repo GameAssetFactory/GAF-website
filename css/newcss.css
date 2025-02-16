@@ -1232,7 +1232,6 @@ textarea.jobs__input {
   background: var(--container-color);
   padding: 0.75rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 20px var(--first-color-second);
   width: 100%;
   display: flex;
   gap: 1.5rem;
