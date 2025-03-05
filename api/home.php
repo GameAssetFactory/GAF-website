@@ -116,7 +116,7 @@
                 <h3 class="services__title">Support</h3>
               </div>
               <p class="services__description">
-                Quality is assured by our support through corrections, upgrades and suggestions. Feel free to contact us if you have any question or suggestion.
+                Quality is assured by our support through corrections, upgrades and suggestions, feel free to contact us if you have any question or suggestion.
               </p>
               <div class="services__background" style="background-image: url('../img/Home/Happy_Hotline.webp');"></div>
             </div>
