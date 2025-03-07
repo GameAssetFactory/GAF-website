@@ -101,6 +101,10 @@
                 $page_title = "Contact - GameAssetFactory";
                 include __DIR__ . '/contact.php';
                 break;
+            case 'mention':
+                $page_title = "Legal Mentions - GameAssetFactory";
+                include __DIR__ . '/mention.php';
+                break;
             default:
                 $page_title = "GameAssetFactory - Build worlds, piece by piece";
                 include __DIR__ . '/home.php';
@@ -180,6 +184,11 @@
         <p>© 2025 GameAssetFactory. All rights reserved.</p>
         <p>This website uses MiSans Fonts under the MiSans Fonts Intellectual Property License Agreement from Xiaomi Inc.</p>
         <p>Created with ❤️ by NEVAR</p>
+        <br>
+        <p><a href="/mention/" class="footer__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'mention') ? 'active' : ''; ?>">
+            <i class="uil uil-info-circle"></i> View the legal notices
+        </a></p>
+
         <br>
       </div>
     </div>
