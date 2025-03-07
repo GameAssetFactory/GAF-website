@@ -24,8 +24,10 @@
             <p>VAT Number: FR 76 850099938</p>
 
             <h2 class="mention__subtitle">Data Collection</h2>
-            <p>No personal data is collected. Only analytical data is collected via Vercel scripts for site performance analysis.</p>
-            <p>Data Usage: Analytical data is used to improve site performance and user experience.</p>
+            <p>GameAssetFactory does not collect any personal data from visitors. However, anonymous analytical data is collected via Vercel scripts to improve site performance.</p>
+
+            <h2 class="mention__subtitle">Data Usage</h2>
+            <p>Analytical data is solely used to optimize site performance and user experience. No data is shared with third parties.</p>
           </div>
         </div>
       </section>
