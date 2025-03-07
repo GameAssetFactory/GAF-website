@@ -28,6 +28,8 @@
 
             <h2 class="mention__subtitle">Data Usage</h2>
             <p>Analytical data is solely used to optimize site performance and user experience. No data is shared with third parties.</p>
+            <p>You can read more about Vercel analytics here: https://vercel.com/docs/analytics</p>
+            <p>For any questions or concerns, please contact us <a href="/contact/" class="footer__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">here</a> <i class="uil uil-info-circle"></i></p>
           </div>
         </div>
       </section>
