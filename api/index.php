@@ -12,6 +12,7 @@
     <meta property="og:url" content="https://gameassetfactory.com/">
     <meta property="og:image" content="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogo1024.webp">
     <link rel="icon" href="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogopetit.ico">
+    <meta property="description" content="Build worlds, piece by piece" />
     <title id="pageTitle"></title>
     
     <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
