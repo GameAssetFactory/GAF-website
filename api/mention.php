@@ -23,14 +23,16 @@
             <p>SIRET Number: 850 099 938 00035</p>
             <p>VAT Number: FR 76 850099938</p>
 
-            <h2 class="mention__subtitle">Data Collection</h2>
-            <p>GameAssetFactory does not collect any personal data from visitors. However, anonymous analytical data is collected via Vercel scripts to improve site performance.</p>
+            <h2 class="mention__subtitle">Compliance with GDPR</h2>
+            <p>GameAssetFactory is committed to complying with the General Data Protection Regulation (GDPR). We do not collect personal data from visitors. However, anonymous analytical data is gathered via Vercel to enhance site performance. These data cannot be used to identify individuals and are solely for optimization purposes.</p>
+            <p>For more details on how Vercel processes data, please refer to their <a class="mention__link" href="https://vercel.com/legal/privacy-policy">Privacy Policy</a>.</p>
 
-            <h2 class="mention__subtitle">Data Usage</h2>
-            <p>Analytical data is solely used to optimize site performance and user experience. No data is shared with third parties.</p>
-            <p>You can read more about Vercel analytics here: <a class="mention__link" href="https://vercel.com/docs/analytics">https://vercel.com/docs/analytics</a></p>
-            <p>For any questions or concerns, please contact us <a href="/contact/" class="mention__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">here</a> <i class="uil uil-info-circle"></i></p>
-          </div>
+            <h2 class="mention__subtitle">Data Collection and Usage</h2>
+            <p>GameAssetFactory does not collect, store, or process personal data from visitors. The only data gathered are anonymous analytics provided by Vercel to monitor and improve site performance.</p>
+            <p>These analytics are used exclusively for internal purposes and are not shared with third parties.</p>
+            <p>To learn more about Vercel’s analytics, visit: <a class="mention__link" href="https://vercel.com/docs/analytics">Vercel Analytics</a>.</p>
+
+            <p>For any questions or concerns, please <a href="/contact/" class="mention__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">contact us</a> <i class="uil uil-info-circle"></i>.</p>
         </div>
       </section>
 
