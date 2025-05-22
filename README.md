@@ -1,9 +1,13 @@
 ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) Welcome to Game Asset Factory 👨‍💻
 =============================================================================================================================
 
+
 ## Visit our website HERE
 
 https://gameassetfactory.com/home/
+
+## Discord HERE
+[![Discord badge](https://dcbadge.limes.pink/api/server/https://discord.gg/BcKRShP?theme=default-inverted)](https://discord.gg/BcKRShP)
 
 ## Description
 
