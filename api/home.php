@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <body>
+ 
     <main class="main">
       <!--========================= Accueil =====================-->
       <section class="home section" id="Home">
@@ -13,11 +11,11 @@
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
-
+ 
             </div>
             <div class="home__data">
               <div class="home__logo">
-                <img src="../img/GameAssetFactoryLogo1024.webp" alt="Game Asset Factory" class="home__logo-img">
+                <img src="../img/GameAssetFactoryLogo1024.webp" alt="Game Asset Factory" class="home__logo-img" width="512" height="512">
               </div>
               <h3 class="home__subtitle">
                 Video Games, Architectural visualization and Renders
@@ -47,8 +45,8 @@
         </div>
 
       </section>
-
-
+ 
+ 
       <!--========================= Services =====================-->
       <section class="services section" id="Services">
         <br><br>
@@ -116,7 +114,7 @@
                 <h3 class="services__title">Support</h3>
               </div>
               <p class="services__description">
-                Quality is assured by our support through corrections, upgrades and suggestions, feel free to contact us if you have any question or suggestion.
+                Quality is assured by our support through corrections, upgrades and suggestions. Feel free to contact us if you have any question or suggestion.
               </p>
               <div class="services__background" style="background-image: url('../img/Home/Happy_Hotline.webp');"></div>
             </div>
@@ -189,7 +187,6 @@
             <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
       </a>
-
+ 
     </main>
-  </body>
-</html>
+ 
