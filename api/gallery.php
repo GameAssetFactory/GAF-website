@@ -1,9 +1,8 @@
-<!doctype html>
-<html lang="en">
-
+ 
 <main class="main">
     <!--========================= Gallery =====================-->
     <section class="gallery section" id="gallery">
+        <h1 class="visually-hidden">Gallery - Game Asset Factory</h1>
      <br><br> 
         <div class="gallery__container container">
             <h2 class="section__title">Our Gallery</h2>
@@ -35,7 +34,7 @@
                 // Afficher les thumbnails
                 foreach ($validImages as $image) {
                     echo "<div class='gallery__item'>";
-                    echo "<img src='{$image['thumbnail']}' alt='Gallery image {$image['number']}' class='gallery__thumbnail' loading='lazy'>";
+                    echo "<img src='{$image['thumbnail']}' alt='Gallery image {$image['number']}' class='gallery__thumbnail' loading='lazy' width='512' height='288'>";
                     echo "</div>";
                 }
                 ?>
@@ -54,7 +53,7 @@
                         foreach ($validImages as $image) {
                             echo "<div class='swiper-slide new-swiper-slide'>";
                             // Ne mettre que data-fullsize, pas de src
-                            echo "<img class='modal__image' data-fullsize='{$image['fullsize']}' alt='Gallery image {$image['number']}'>";
+                            echo "<img class='modal__image' data-fullsize='{$image['fullsize']}' alt='Gallery image {$image['number']}' width='1920' height='1080'>";
                             echo "</div>";
                         }
                         ?>
@@ -76,5 +75,4 @@
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 </main>
-  </body>
-</html>
+ 

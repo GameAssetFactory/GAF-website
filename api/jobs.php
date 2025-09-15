@@ -1,8 +1,7 @@
-<!doctype html>
-<html lang="en">
-  <body>
+ 
     <main class="main">
       <section class="jobs section" id="jobs">
+        <h1 class="visually-hidden">Jobs - Game Asset Factory</h1>
         <br><br>
         <h2 class="section__title">Jobs</h2>
         <span class="section__subtitle">Why work with us?</span>
@@ -253,5 +252,4 @@
           <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
     </main>
-  </body>
-</html>
+ 
