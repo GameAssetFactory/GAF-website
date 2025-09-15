@@ -55,8 +55,9 @@
           $meta_description = 'Legal mentions and terms for Game Asset Factory website.';
           break;
       }
-      $canonical = '/home/';
-      if ($current_page && $current_page !== 'home') { $canonical = '/' . $current_page . '/'; }
+      $baseUrl = 'https://gameassetfactory.com';
+      $canonical = $baseUrl . '/home/';
+      if ($current_page && $current_page !== 'home') { $canonical = $baseUrl . '/' . $current_page . '/'; }
       echo "<title>" . htmlspecialchars($meta_title, ENT_QUOTES) . "</title>\n";
       echo "<meta name=\"description\" content=\"" . htmlspecialchars($meta_description, ENT_QUOTES) . "\"/>\n";
       echo "<link rel=\"canonical\" href=\"" . htmlspecialchars($canonical, ENT_QUOTES) . "\"/>\n";
