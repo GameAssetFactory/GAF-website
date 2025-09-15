@@ -1,12 +1,10 @@
- 
-    <main class="main">
+<main class="main">
       <!--========================= Accueil =====================-->
       <section class="mention" id="Mention">
       <br><br>      <br><br>
         <div class="mention__content">
 
-          <h1 class="visually-hidden">Legal Notices - Game Asset Factory</h1>
-          <h2 class="mention__title">Legal Notices</h2>
+          <h1 class="mention__title">Legal Notices</h1>
           <div class="mention__content">
             <h2 class="mention__subtitle">Site Owner Identity</h2>
             <p>Company Name: GameAssetFactory</p>
@@ -36,4 +34,3 @@
       </section>
 
     </main>
- 

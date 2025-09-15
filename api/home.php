@@ -2,7 +2,6 @@
     <main class="main">
       <!--========================= Accueil =====================-->
       <section class="home section" id="Home">
-        <h1 class="visually-hidden">Game Asset Factory - 3D assets, environments and services</h1>
         <div class="home__video-container">
           <video class="home__background-video" autoplay muted loop playsinline>
             <source src="../img/Home/Video/GAF_Home_Video.mp4" type="video/mp4">
@@ -18,15 +17,15 @@
               <div class="home__logo">
                 <img src="../img/GameAssetFactoryLogo1024.webp" alt="Game Asset Factory" class="home__logo-img" width="512" height="512">
               </div>
-              <h3 class="home__subtitle">
+              <h1 class="home__subtitle">
                 Video Games, Architectural visualization and Renders
-              </h3>
+              </h1>
               <a href="/contact/" class="button button--flex button--small contact__button <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'active' : ''; ?>">
                 Contact us <i class="uil uil-message button__icon"></i>
               </a>
               <div class="home__info">
                 <p class="home__info-text">NEW WEBSITE IS LIVE NOW</p>
-                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by Daniels  <a href="https://github.com/NEVARLeVrai" target="_blank" class="home__social-icon">
+                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by NEVAR  <a href="https://github.com/NEVARLeVrai" target="_blank" class="home__social-icon">
                 <i class="uil uil-github"></i>
               </a></a></p>
               </div>

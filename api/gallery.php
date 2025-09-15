@@ -2,10 +2,9 @@
 <main class="main">
     <!--========================= Gallery =====================-->
     <section class="gallery section" id="gallery">
-        <h1 class="visually-hidden">Gallery - Game Asset Factory</h1>
-     <br><br> 
+      <br><br> 
         <div class="gallery__container container">
-            <h2 class="section__title">Our Gallery</h2>
+            <h1 class="section__title">Our Gallery</h1>
             <span class="section__subtitle">Discover our latest creations</span>
 
             <div class="gallery__content container">

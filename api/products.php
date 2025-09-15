@@ -1,9 +1,8 @@
  
     <main class="main">
       <section class="products section" id="products">
-        <h1 class="visually-hidden">Products - Game Asset Factory</h1>
         <br><br>
-        <h2 class="section__title">Products</h2>
+        <h1 class="section__title">Products</h1>
         <span class="section__subtitle">Our products</span>
 
         <!-- Why work with us section -->

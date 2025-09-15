@@ -2,9 +2,8 @@
 <main class="main">
  
     <section class="contact section" id="Contact-us-discord">
-      <h1 class="visually-hidden">Contact - Game Asset Factory</h1>
       <br><br>
-      <h2 class="section__title">Contact via Discord</h2>
+      <h1 class="section__title">Contact via Discord</h1>
  
       <div class="discord__container container grid">
         <div class="discord__information">
