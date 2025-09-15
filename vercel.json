@@ -8,7 +8,7 @@
     {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "www.gameassetfactory.com" }],
-      "destination": "https://gameassetfactory.com/home/",
+      "destination": "https://gameassetfactory.com/$1",
       "permanent": true
     },
     { "source": "/", "destination": "/home/", "permanent": true }
