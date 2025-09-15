@@ -1232,7 +1232,6 @@ textarea.jobs__input {
   background: var(--container-color);
   padding: 0.75rem;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 20px var(--first-color-second);
   width: 100%;
   display: flex;
   gap: 1.5rem;
@@ -2583,5 +2582,58 @@ main {
   background-color: var(--first-color);
 }
 
+.mention {
+    padding: 60px 0;
+    background-color: var(--body-color);
+}
+
+.mention__title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+    margin-bottom: var(--mb-2);
+}
+
+.mention__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--mb-2);
+    
+    background-color: var(--container-color);
+    border-radius: 20px;
+
+}
+
+.mention__subtitle {
+  
+    font-size: var(--h2-font-size);
+    margin-top: var(--mb-1-5);
+    color: var(--first-color);
+}
+
+.mention__content p {
+    font-size: var(--normal-font-size);
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-75);
+}
+
+.mention__link {
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+    transition: 0.3s;
+}
+
+.mention__link:hover {
+    color: var(--text-color);
+}
 
 
+.footer__link {
+  font-size: 15px;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: var(--container-color);
+}
