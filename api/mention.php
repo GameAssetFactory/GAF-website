@@ -5,7 +5,8 @@
       <br><br>      <br><br>
         <div class="mention__content">
 
-          <h1 class="mention__title">Legal Notices</h1>
+          <h1 class="visually-hidden">Legal Notices - Game Asset Factory</h1>
+          <h2 class="mention__title">Legal Notices</h2>
           <div class="mention__content">
             <h2 class="mention__subtitle">Site Owner Identity</h2>
             <p>Company Name: GameAssetFactory</p>

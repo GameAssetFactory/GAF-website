@@ -25,7 +25,8 @@
                 Contact us <i class="uil uil-message button__icon"></i>
               </a>
               <div class="home__info">
-                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by NEVAR  <a href="https://github.com/NEVARLeVrai" target="_blank" class="home__social-icon">
+                <p class="home__info-text">NEW WEBSITE IS LIVE NOW</p>
+                <p class="home__info-credit">Made with <i class="uil uil-heart"></i> by Daniels  <a href="https://github.com/NEVARLeVrai" target="_blank" class="home__social-icon">
                 <i class="uil uil-github"></i>
               </a></a></p>
               </div>
@@ -115,7 +116,7 @@
                 <h3 class="services__title">Support</h3>
               </div>
               <p class="services__description">
-                Quality is assured by our support through corrections, upgrades and suggestions, feel free to contact us if you have any question or suggestion.
+                Quality is assured by our support through corrections, upgrades and suggestions. Feel free to contact us if you have any question or suggestion.
               </p>
               <div class="services__background" style="background-image: url('../img/Home/Happy_Hotline.webp');"></div>
             </div>
