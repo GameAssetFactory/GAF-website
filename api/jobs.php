@@ -1,10 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <body>
+ 
     <main class="main">
       <section class="jobs section" id="jobs">
         <br><br>
-        <h2 class="section__title">Jobs</h2>
+        <h1 class="section__title">Jobs</h1>
         <span class="section__subtitle">Why work with us?</span>
 
         <!-- Why work with us section -->
@@ -253,5 +251,4 @@
           <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
     </main>
-  </body>
-</html>
+ 
