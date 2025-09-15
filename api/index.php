@@ -20,7 +20,7 @@
       "@type": "Organization",
       "name": "Game Asset Factory",
       "url": "https://gameassetfactory.com/",
-      "logo": "https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogopetit.png",
+      "logo": "https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png",
       "sameAs": [
         "https://www.youtube.com/@Unreal3D",
         "https://discord.gg/tsywd9BwCn",
@@ -55,7 +55,7 @@
           $meta_description = 'Legal mentions and terms for Game Asset Factory website.';
           break;
       }
-      $canonical = '/';
+      $canonical = '/home/';
       if ($current_page && $current_page !== 'home') { $canonical = '/' . $current_page . '/'; }
       echo "<title>" . htmlspecialchars($meta_title, ENT_QUOTES) . "</title>\n";
       echo "<meta name=\"description\" content=\"" . htmlspecialchars($meta_description, ENT_QUOTES) . "\"/>\n";
