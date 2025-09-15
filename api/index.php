@@ -20,7 +20,7 @@
       "@type": "Organization",
       "name": "Game Asset Factory",
       "url": "https://gameassetfactory.com/",
-      "logo": "https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png",
+      "logo": "https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogopetit.png",
       "sameAs": [
         "https://www.youtube.com/@Unreal3D",
         "https://discord.gg/tsywd9BwCn",
