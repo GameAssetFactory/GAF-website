@@ -214,7 +214,7 @@
       <div class="footer__copy">
         <p>© 2025 GameAssetFactory. All rights reserved.</p>
         <p>This website uses MiSans Fonts under the MiSans Fonts Intellectual Property License Agreement from Xiaomi Inc.</p>
-        <p>Created with ❤️ by Daniels Soares</p>
+        <p>Created with ❤️ by NEVAR</p>
         <br>
         <p><a href="/mention/" class="footer__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'mention') ? 'active' : ''; ?>">
             <i class="uil uil-info-circle"></i> View the legal notices
