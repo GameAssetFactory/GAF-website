@@ -44,7 +44,6 @@
     <meta name="description" content="<?php echo htmlspecialchars($meta_description, ENT_QUOTES); ?>" />
     <link rel="canonical" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>" />
     <meta name="robots" content="index,follow" />
-    <title><?php echo htmlspecialchars($meta_title, ENT_QUOTES); ?></title>
     
     <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/newcss.css" />
@@ -172,7 +171,7 @@
   <!--================== Footer ===============-->
   <footer class="footer">
     <div class="footer__bg">
-      <div class="footer__container container grid">
+      <div class="footer__container container grid" data-nosnippet>
         <div class="footer__content">
           <h3 class="footer__title">GameAssetFactory</h3>
           <p class="footer__description">
@@ -211,7 +210,7 @@
         </div>
       </div>
 
-      <div class="footer__copy">
+      <div class="footer__copy" data-nosnippet>
         <p>© 2025 GameAssetFactory. All rights reserved.</p>
         <p>This website uses MiSans Fonts under the MiSans Fonts Intellectual Property License Agreement from Xiaomi Inc.</p>
         <p>Created with ❤️ by NEVAR</p>
