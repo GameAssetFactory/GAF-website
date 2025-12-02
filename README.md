@@ -40,3 +40,9 @@ Game Asset Factory is a professional game art studio platform that showcases our
 - PHP
 - JavaScript
 - Responsive Design
+
+## License
+
+See the [LICENSE](LICENSE) file for details.
+
+**Important:** The design, layout, visual representation, and original images are the exclusive property of GameAssetFactory. Some portions of the underlying codebase are open-source and remain the property of their respective authors.

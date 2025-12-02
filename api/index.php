@@ -12,23 +12,6 @@
     <meta property="og:url" content="https://gameassetfactory.com/">
     <meta property="og:image" content="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogo1024.webp">
     <link rel="icon" href="https://gameassetfactory-website-gaf.vercel.app/img/GameAssetFactoryLogopetit.ico">
-    <meta name="description" content="Build worlds, piece by piece" />
-    <link rel="icon" type="image/x-icon" href="/img/GameAssetFactoryLogopetit.ico">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Game Asset Factory",
-      "url": "https://gameassetfactory.com/",
-      "logo": "https://gameassetfactory.com/img/GameAssetFactoryLogopetit.png",
-      "sameAs": [
-        "https://www.youtube.com/@Unreal3D",
-        "https://discord.gg/tsywd9BwCn",
-        "https://github.com/GameAssetFactory/GAF-website",
-        "https://www.fab.com/sellers/GameAssetFactory"
-      ]
-    }
-    </script>
     <?php
       $current_page = isset($_GET['page']) ? $_GET['page'] : 'home';
       $meta_title = 'GameAssetFactory - Build worlds, piece by piece';
@@ -55,13 +38,11 @@
           $meta_description = 'Legal mentions and terms for Game Asset Factory website.';
           break;
       }
-      $baseUrl = 'https://gameassetfactory.com';
-      $canonical = $baseUrl . '/home/';
-      if ($current_page && $current_page !== 'home') { $canonical = $baseUrl . '/' . $current_page . '/'; }
-      echo "<title>" . htmlspecialchars($meta_title, ENT_QUOTES) . "</title>\n";
-      echo "<meta name=\"description\" content=\"" . htmlspecialchars($meta_description, ENT_QUOTES) . "\"/>\n";
-      echo "<link rel=\"canonical\" href=\"" . htmlspecialchars($canonical, ENT_QUOTES) . "\"/>\n";
+      $canonical = '/';
+      if ($current_page && $current_page !== 'home') { $canonical = '/' . $current_page . '/'; }
     ?>
+    <meta name="description" content="<?php echo htmlspecialchars($meta_description, ENT_QUOTES); ?>" />
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonical, ENT_QUOTES); ?>" />
     <meta name="robots" content="index,follow" />
     <title><?php echo htmlspecialchars($meta_title, ENT_QUOTES); ?></title>
     
@@ -233,6 +214,7 @@
       <div class="footer__copy">
         <p>© 2025 GameAssetFactory. All rights reserved.</p>
         <p>This website uses MiSans Fonts under the MiSans Fonts Intellectual Property License Agreement from Xiaomi Inc.</p>
+        <p>Some portions of the underlying codebase are open-source and remain the property of their respective authors.</p>
         <p>Created with ❤️ by NEVAR</p>
         <br>
         <p><a href="/mention/" class="footer__link <?php echo (isset($_GET['page']) && $_GET['page'] == 'mention') ? 'active' : ''; ?>">
