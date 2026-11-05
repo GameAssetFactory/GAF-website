@@ -60,33 +60,40 @@ modalCloses.forEach((modalClose) => {
 });
 
 /*======================= Swiper des jobs ===================*/
-let swiperJobs = new Swiper(".jobs__container", {
-  cssMode: true,
-  loop: false,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-    disabledClass: 'swiper-button-disabled',
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  slidesPerView: 1,
-  spaceBetween: 30,
-  grabCursor: true,
-  effect: 'slide',
-  speed: 400,
-  observer: true,
-  observeParents: true,
-  resizeObserver: true,
-  updateOnWindowResize: true
-});
+// Le slider jobs n'existe pas quand le recrutement est en pause (voir $JOBS_ON_PAUSE dans api/jobs.php)
+const jobsSwiperContainer = document.querySelector(".jobs__container");
+let swiperJobs = null;
+if (jobsSwiperContainer) {
+  swiperJobs = new Swiper(".jobs__container", {
+    cssMode: true,
+    loop: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+      disabledClass: 'swiper-button-disabled',
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grabCursor: true,
+    effect: 'slide',
+    speed: 400,
+    observer: true,
+    observeParents: true,
+    resizeObserver: true,
+    updateOnWindowResize: true
+  });
+}
 
 // Mise à jour du Swiper lors du redimensionnement
 window.addEventListener('resize', () => {
-  swiperJobs.update();
+  if (swiperJobs) {
+    swiperJobs.update();
+  }
 });
 
 /*==================== LIEN ACTIF DES SECTIONS DÉFILEMENT ====================*/
@@ -219,39 +226,48 @@ themeButton.addEventListener("click", () => {
 document.addEventListener('DOMContentLoaded', handleThemeOnScroll);
 
 /* Nouveau Swiper avec configuration distincte */
-let newSwiper = new Swiper(".new-swiper-container", {
-  cssMode: false,
-  loop: false,
-  navigation: {
-    nextEl: '.new-swiper-button-next',
-    prevEl: '.new-swiper-button-prev',
-    disabledClass: 'new-swiper-button-disabled',
-  },
-  pagination: {
-    el: '.new-swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  slidesPerView: 1,
-  spaceBetween: 30,
-  grabCursor: true,
-  effect: 'slide',
-  speed: 400,
-  observer: true,
-  observeParents: true,
-  resizeObserver: true,
-  updateOnWindowResize: true,
-  preventInteractionOnTransition: true
-});
+// Le slider galerie n'existe que sur la page gallery
+const gallerySwiperContainer = document.querySelector(".new-swiper-container");
+let newSwiper = null;
+if (gallerySwiperContainer) {
+  newSwiper = new Swiper(".new-swiper-container", {
+    cssMode: false,
+    loop: false,
+    navigation: {
+      nextEl: '.new-swiper-button-next',
+      prevEl: '.new-swiper-button-prev',
+      disabledClass: 'new-swiper-button-disabled',
+    },
+    pagination: {
+      el: '.new-swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grabCursor: true,
+    effect: 'slide',
+    speed: 400,
+    observer: true,
+    observeParents: true,
+    resizeObserver: true,
+    updateOnWindowResize: true,
+    preventInteractionOnTransition: true
+  });
+}
 
 // Mise à jour du nouveau Swiper lors du redimensionnement
 window.addEventListener('resize', () => {
-  newSwiper.update();
+  if (newSwiper) {
+    newSwiper.update();
+  }
 });
 
 // Gestion du modal pour la galerie
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('imageModal');
+    // Le modal galerie n'existe que sur la page gallery
+    if (!modal) return;
     const closeBtn = document.querySelector('.modal__close');
     const galleryItems = document.querySelectorAll('.gallery__item');
     const modalImages = document.querySelectorAll('.modal__image');

@@ -1,4 +1,12 @@
- 
+  <?php
+  /* ============================================================
+     PAUSE RECRUTEMENT
+     Mettre ce flag à false pour réactiver les offres et le
+     formulaire de candidature.
+     ============================================================ */
+  $JOBS_ON_PAUSE = true;
+  ?>
+
     <main class="main">
       <section class="jobs section" id="jobs">
         <br><br>
@@ -24,6 +32,7 @@
           </div>
         </div>
 
+        <?php if (!$JOBS_ON_PAUSE): ?>
         <!-- Slider Container -->
         <div class="jobs__container container swiper-container">
           <div class="swiper-wrapper">
@@ -153,7 +162,23 @@
             </div>
           </div>
         </div>
+        <?php else: ?>
 
+        <!-- Recrutement en pause -->
+        <div class="jobs__pause container">
+          <div class="jobs__pause-content">
+            <i class="uil uil-pause-circle jobs__pause-icon"></i>
+            <h3>Recruitment is currently on hold</h3>
+            <p>
+              We're not looking for new artists at the moment, but we would love to
+              stay in touch. Check back soon, or reach out through our
+              <a href="/contact/">contact page</a>.
+            </p>
+          </div>
+        </div>
+        <?php endif; ?>
+
+        <?php if (!$JOBS_ON_PAUSE): ?>
         <br><br><br><br>
         <div class="contact__scroll-container">
           <h3 class="home__logo-large-title">You can join us</h3>
@@ -305,6 +330,7 @@
 
 
       </section>
+      <?php endif; ?>
 
               <!--================== SCROLL TOP ==================-->
               <a href="#" class="scrollup" id="scroll-up">
